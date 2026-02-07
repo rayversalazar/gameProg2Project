@@ -546,6 +546,8 @@ GameObject:
   - component: {fileID: 1115643126}
   - component: {fileID: 1115643125}
   - component: {fileID: 1115643127}
+  - component: {fileID: 1115643129}
+  - component: {fileID: 1115643128}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -735,7 +737,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.08071351, y: 0.015}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -745,7 +747,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.52681065, y: 1.7150502}
+  m_Size: {x: 0.36538363, y: 1.7150502}
   m_EdgeRadius: 0
 --- !u!50 &1115643120
 Rigidbody2D:
@@ -804,7 +806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d3eedc45ad6eb444b4d92cf1ae54778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WalkState
-  state: 1
   movementSpeed: 5
 --- !u!114 &1115643124
 MonoBehaviour:
@@ -821,7 +822,7 @@ MonoBehaviour:
   playerPhysics: {fileID: 1115643122}
   playerInputControls: {fileID: 1115643118}
   animator: {fileID: 1115643117}
-  stateMachine: {fileID: 0}
+  stateMachine: {fileID: 1115643126}
 --- !u!114 &1115643125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,7 +835,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9b731c7cd329e4b9b47fa6af9d8b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IdleState
-  state: 0
 --- !u!114 &1115643126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,9 +847,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06ac12e1d55b9343ab1459af2d4bebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStateMachine
+  currentState: {fileID: 0}
   idle: {fileID: 1115643125}
   walk: {fileID: 1115643123}
   jump: {fileID: 1115643127}
+  rising: {fileID: 1115643128}
+  falling: {fileID: 1115643129}
 --- !u!114 &1115643127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,8 +865,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a57193855e7a54f8ba6cc6e4d6bd21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JumpState
-  state: 2
   jumpForce: 6.3
+--- !u!114 &1115643128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115643113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539cb5780d33051469529bc2d6f05545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RisingState
+  airMovementSpeed: 5
+--- !u!114 &1115643129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115643113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6e2e5a8e743294fbb0a7b3d30f7ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FallingState
+  airMovementSpeed: 5
 --- !u!1 &1130102657
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,10 +31,6 @@ public class PlayerInputControls : MonoBehaviour
     {
         horizontalInput = movementActionRef.action.ReadValue<float>(); 
     }
-    public bool JumpTriggered()
-    {
-        return jumpActionRef.action.WasPerformedThisFrame();
-    }
     private void FixedUpdate()
     {
     }

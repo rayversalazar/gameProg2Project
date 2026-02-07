@@ -1,8 +1,8 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 //base class or template of the various player state and abilities
 public abstract class BaseState : MonoBehaviour
 {
-    public PlayerStates.states state;
     protected Player player;
 
     protected PlayerPhysics basePhysics;
@@ -30,7 +30,7 @@ public abstract class BaseState : MonoBehaviour
     }
     public virtual void OnEnter(PlayerStateMachine state)
     {
-        Debug.Log("Entered "+ this.state +" state.");
+        Debug.Log("Entered "+ state.currentState +" state.");
     }
     public virtual void OnExit(PlayerStateMachine state)
     {

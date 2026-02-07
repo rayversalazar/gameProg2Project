@@ -2,10 +2,12 @@ using UnityEngine;
 //handles the changing state logic and container for the current state of the player
 public class PlayerStateMachine : MonoBehaviour
 {
-    BaseState currentState;
+    public BaseState currentState;
     public IdleState idle;
     public WalkState walk;
     public JumpState jump;
+    public RisingState rising;
+    public FallingState falling;
     private void Start()
     {
         //default state
@@ -14,6 +16,7 @@ public class PlayerStateMachine : MonoBehaviour
     }
     private void Update()
     {
+        
         currentState.ProcessAbility(this);
     }
     private void FixedUpdate()
