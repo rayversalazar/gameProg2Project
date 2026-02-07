@@ -8,7 +8,7 @@
             "actions": [
                 {
                     "name": "Movement",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "a2d71aba-9903-4ca0-9bd3-94eb271b1c38",
                     "expectedControlType": "",
                     "processors": "",

@@ -1,16 +1,43 @@
 using UnityEngine;
 
-public class WalkState : MonoBehaviour
+public class WalkState : BaseState
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] float movementSpeed;
+    private string walkParameterName = "Walk";
+    private int walkParameterID;
+
+    public override void FixedProcessAbility(PlayerStateMachine state)
     {
-        
+        Walk();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnEnter(PlayerStateMachine state)
     {
-        
+        base.OnEnter(state);
+        baseAnimator.SetBool(walkParameterID, true);
+    }
+
+    public override void OnExit(PlayerStateMachine state)
+    {
+        baseAnimator.SetBool(walkParameterID, false);
+        basePhysics.rigidbody.linearVelocityX = 0;
+    }
+
+    public override void ProcessAbility(PlayerStateMachine state)
+    {
+        if (baseInputControls.horizontalInput == 0)
+        {
+            state.ChangeState(state.idle);
+        }
+    }
+    public override void Initialize()
+    {
+        base.Initialize();
+        walkParameterID = Animator.StringToHash(walkParameterName);
+    }
+    void Walk()
+    {
+        basePhysics.rigidbody.linearVelocity = new Vector2(movementSpeed * baseInputControls.horizontalInput, basePhysics.rigidbody.linearVelocityY);
+        player.FlipCharacter();
     }
 }

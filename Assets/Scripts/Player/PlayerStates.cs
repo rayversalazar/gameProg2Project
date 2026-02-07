@@ -6,6 +6,9 @@ public class PlayerStates
    public enum states
     {
         Idle,
-        Walk
+        Walk,
+        Jump,
+        Attack,
+        Dash
     }
 }
