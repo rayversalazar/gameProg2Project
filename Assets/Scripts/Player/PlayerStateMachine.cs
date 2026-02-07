@@ -5,6 +5,7 @@ public class PlayerStateMachine : MonoBehaviour
     BaseState currentState;
     public IdleState idle;
     public WalkState walk;
+    public JumpState jump;
     private void Start()
     {
         //default state

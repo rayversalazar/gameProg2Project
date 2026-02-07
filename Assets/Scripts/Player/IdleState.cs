@@ -9,9 +9,15 @@ public class IdleState : BaseState
 
     public override void ProcessAbility(PlayerStateMachine state)
     {
+        //transitioning to idle to walk
         if (baseInputControls.horizontalInput!=0)
         {
             state.ChangeState(state.walk);
+        }
+        //transitioning to idle to jump
+        if (basePhysics.isGrounded() && baseInputControls.JumpTriggered())
+        {
+            state.ChangeState(state.jump);
         }
     }
     public override void OnEnter(PlayerStateMachine state)
