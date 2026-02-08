@@ -3,9 +3,10 @@ using UnityEngine;
 public class PlayerPhysics : MonoBehaviour
 {
     public Rigidbody2D rigidbody;
-    [SerializeField] Transform groundChecker;
-    [SerializeField] float groundCheckerRadius;
     [SerializeField] LayerMask groundLayer;
+    [SerializeField] Transform groundCheckerPosition;
+    [SerializeField] Vector2 groundCheckerSize;
+    [SerializeField] float castDistance = 0.05f;
     void Start()
     {
         
@@ -19,11 +20,12 @@ public class PlayerPhysics : MonoBehaviour
 
     public bool isGrounded()
     {
-        return Physics2D.OverlapCircle(groundChecker.position, groundCheckerRadius, groundLayer);
+        RaycastHit2D hitGround = Physics2D.BoxCast(groundCheckerPosition.position, groundCheckerSize, 0f, Vector2.zero, castDistance, groundLayer);
+        return hitGround;
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(groundChecker.position, groundCheckerRadius);
+        Gizmos.DrawWireCube(groundCheckerPosition.position, groundCheckerSize);
     }
 }

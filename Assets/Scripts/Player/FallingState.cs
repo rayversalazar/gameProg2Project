@@ -5,6 +5,8 @@ public class FallingState : BaseState
     [SerializeField] float airMovementSpeed;
     string FallingParameterName = "Falling";
     int FallingParameterID;
+    string landingParameterName = "Land";
+    int landingParameterID;
     public override void FixedProcessAbility(PlayerStateMachine state)
     {
         basePhysics.rigidbody.linearVelocity = new Vector2(airMovementSpeed * baseInputControls.horizontalInput, basePhysics.rigidbody.linearVelocityY);
@@ -15,6 +17,7 @@ public class FallingState : BaseState
     {
         base.Initialize();
         FallingParameterID = Animator.StringToHash(FallingParameterName);
+        landingParameterID = Animator.StringToHash(landingParameterName);
     }
 
     public override void OnEnter(PlayerStateMachine state)
@@ -25,14 +28,14 @@ public class FallingState : BaseState
 
     public override void OnExit(PlayerStateMachine state)
     {
-        base.OnExit(state);
+        baseAnimator.SetTrigger(landingParameterID);
         baseAnimator.SetBool(FallingParameterID, false);
     }
 
     public override void ProcessAbility(PlayerStateMachine state)
     {
-        base.ProcessAbility(state);
-        if (basePhysics.isGrounded() && baseInputControls.horizontalInput==0)
+
+        if (basePhysics.isGrounded() && baseInputControls.horizontalInput==0    )
         {
             state.ChangeState(state.idle);
         }

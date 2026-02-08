@@ -35,6 +35,11 @@ public class WalkState : BaseState
         {
             state.ChangeState(state.jump);
         }
+        //transitioning from walk to falling
+        if (!basePhysics.isGrounded() && basePhysics.rigidbody.linearVelocityY<0)
+        {
+            state.ChangeState(state.falling);
+        }
     }
     public override void Initialize()
     {

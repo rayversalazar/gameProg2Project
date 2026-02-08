@@ -13,11 +13,11 @@ TagManager:
   - UI
   - Ground
   - Player
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player Hurt Box
+  - Player Hit Box
+  - Hazard
+  - Enemy Hit Box
+  - Enemy Hurt Box
   - 
   - 
   - 

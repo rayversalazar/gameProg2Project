@@ -19,6 +19,11 @@ public class IdleState : BaseState
         {
             state.ChangeState(state.jump);
         }
+        //transitioning from idle to falling
+        if (!basePhysics.isGrounded() && basePhysics.rigidbody.linearVelocityY < 0)
+        {
+            state.ChangeState(state.falling);
+        }
     }
     public override void OnEnter(PlayerStateMachine state)
     {
