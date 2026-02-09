@@ -8,6 +8,7 @@ public class PlayerStateMachine : MonoBehaviour
     public JumpState jump;
     public RisingState rising;
     public FallingState falling;
+    public KnockbackState knockback;
     private void Start()
     {
         //default state

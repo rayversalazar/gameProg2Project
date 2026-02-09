@@ -9,7 +9,7 @@ public class HurtBox : MonoBehaviour
         IDamageDealer damageSource = other.GetComponent<IDamageDealer>();
         if (damageSource != null)
         {
-            player.TakeDamage(damageSource.Damage);
+            player.TakeDamage(damageSource.Damage, other.transform.position);
         }
     }
 

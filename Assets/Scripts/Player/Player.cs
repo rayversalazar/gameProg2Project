@@ -12,7 +12,7 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] int MaxHP;
     [SerializeField] int currentHP;
 
-    private bool facingRight = false;
+    public bool facingRight = true;
     void Start()
     {
         currentHP = MaxHP;
@@ -35,14 +35,19 @@ public class Player : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage(IDamageDealer damageDealer, Transform other)
+    public void TakeDamage(int damage, Vector3 enemy)
     {
-        currentHP -= damageDealer.Damage;
+        currentHP -= damage;
         if (currentHP <= 0)
         {
             Debug.Log("yatap");
             return;
         }
+        stateMachine.knockback.knockbackDirection = enemy.x > transform.position.x ? 1 : -1;
+        stateMachine.ChangeState(stateMachine.knockback);
+    }
+    public void TakeDamage(int damage)
+    {
 
     }
 }

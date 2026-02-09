@@ -119,6 +119,20 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &24293790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Movement
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 89517abd499a27f43a71a5ea695781bf, type: 3}
+  m_ActionId: a2d71aba-9903-4ca0-9bd3-94eb271b1c38
 --- !u!1 &122434470
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,20 +525,6 @@ MonoBehaviour:
     Time: 0.383
     Smoothing: 4.2
     IgnoreY: 1
---- !u!114 &1089834849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: Player/Jump
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 89517abd499a27f43a71a5ea695781bf, type: 3}
-  m_ActionId: a4f3f8d4-d1d9-4b1b-bf4e-ddd8b3048143
 --- !u!1 &1115643113
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,15 +539,16 @@ GameObject:
   - component: {fileID: 1115643116}
   - component: {fileID: 1115643120}
   - component: {fileID: 1115643119}
+  - component: {fileID: 1115643126}
   - component: {fileID: 1115643118}
   - component: {fileID: 1115643122}
   - component: {fileID: 1115643124}
   - component: {fileID: 1115643123}
-  - component: {fileID: 1115643126}
   - component: {fileID: 1115643125}
   - component: {fileID: 1115643127}
   - component: {fileID: 1115643129}
   - component: {fileID: 1115643128}
+  - component: {fileID: 1115643130}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -701,8 +702,8 @@ MonoBehaviour:
     m_Asset: {fileID: 0}
     m_Actions: []
     m_Bindings: []
-  movementActionRef: {fileID: 1290835156}
-  jumpActionRef: {fileID: 1089834849}
+  movementActionRef: {fileID: 24293790}
+  jumpActionRef: {fileID: 1760014814}
   horizontalInput: 0
 --- !u!61 &1115643119
 BoxCollider2D:
@@ -827,6 +828,7 @@ MonoBehaviour:
   stateMachine: {fileID: 1115643126}
   MaxHP: 10
   currentHP: 0
+  facingRight: 0
 --- !u!114 &1115643125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -857,6 +859,7 @@ MonoBehaviour:
   jump: {fileID: 1115643127}
   rising: {fileID: 1115643128}
   falling: {fileID: 1115643129}
+  knockback: {fileID: 1115643130}
 --- !u!114 &1115643127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,6 +899,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FallingState
   airMovementSpeed: 5
+--- !u!114 &1115643130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115643113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848043ccf37b6e34c86e84867597e868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KnockbackState
+  knockbackForceX: 10
+  knockbackForceY: 10
+  knockbackDuration: 0.15
+  knockbackDirection: 0
 --- !u!1 &1130102657
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,20 +960,6 @@ Transform:
   - {fileID: 1522939004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1290835156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: Player/Movement
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 89517abd499a27f43a71a5ea695781bf, type: 3}
-  m_ActionId: a2d71aba-9903-4ca0-9bd3-94eb271b1c38
 --- !u!1 &1522939003
 GameObject:
   m_ObjectHideFlags: 0
@@ -13025,6 +13030,20 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1760014814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Jump
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 89517abd499a27f43a71a5ea695781bf, type: 3}
+  m_ActionId: a4f3f8d4-d1d9-4b1b-bf4e-ddd8b3048143
 --- !u!1 &2130411612
 GameObject:
   m_ObjectHideFlags: 0
