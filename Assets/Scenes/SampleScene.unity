@@ -158,7 +158,7 @@ Transform:
   m_GameObject: {fileID: 122434470}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.075, y: -0.8, z: 0}
+  m_LocalPosition: {x: 0.075, y: -0.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -912,8 +912,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KnockbackState
   knockbackForceX: 10
-  knockbackForceY: 10
-  knockbackDuration: 0.15
+  knockbackForceY: 5
+  knockbackDuration: 0.2
   knockbackDirection: 0
 --- !u!1 &1130102657
 GameObject:

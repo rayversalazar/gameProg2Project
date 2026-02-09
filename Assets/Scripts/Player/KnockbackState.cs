@@ -4,8 +4,8 @@ public class KnockbackState : BaseState
 {
     [SerializeField] float knockbackForceX;
     [SerializeField] float knockbackForceY;
-    [SerializeField] float knockbackDuration;
-    float time;
+    [SerializeField] float knockbackStateDuration;
+    [SerializeField] float time;
     public int knockbackDirection;
     public override void Initialize()
     {
@@ -14,7 +14,7 @@ public class KnockbackState : BaseState
     }
     public override void OnEnter(PlayerStateMachine state)
     {
-        time = knockbackDuration;
+        time = knockbackStateDuration;
 
         basePhysics.rigidbody.linearVelocity = Vector2.zero;
         if (!player.facingRight)
@@ -33,8 +33,15 @@ public class KnockbackState : BaseState
         time -= Time.deltaTime;
         if (time <= 0)
         {
+            if(basePhysics.isGrounded())
             state.ChangeState(state.idle);
+            
+            else state.ChangeState(state.rising);
         }
 
+    }
+    public override void OnExit(PlayerStateMachine state)
+    {
+        basePhysics.rigidbody.linearVelocity = Vector2.zero;
     }
 }
