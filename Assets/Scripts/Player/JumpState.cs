@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class JumpState : BaseState
 {
     [SerializeField] float jumpForce;
-    float minimumStateDuration;
 
     public override void OnEnter(PlayerStateMachine state)
     {

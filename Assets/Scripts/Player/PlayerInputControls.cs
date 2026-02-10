@@ -12,6 +12,7 @@ public class PlayerInputControls : MonoBehaviour
     public InputActionReference jumpActionRef;
 
     public float horizontalInput;
+    public float jumpInput;
 
     void Start()
     {
@@ -29,7 +30,8 @@ public class PlayerInputControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = movementActionRef.action.ReadValue<float>(); 
+        horizontalInput = movementActionRef.action.ReadValue<float>();
+        jumpInput = jumpActionRef.action.ReadValue<float>();
     }
     private void FixedUpdate()
     {

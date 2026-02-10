@@ -3,10 +3,13 @@ using UnityEngine;
 public class FallingState : BaseState
 {
     [SerializeField] float airMovementSpeed;
+    [SerializeField] float coyoteTimeJump;
     string FallingParameterName = "Falling";
     int FallingParameterID;
     string landingParameterName = "Land";
     int landingParameterID;
+
+    float time;
     public override void FixedProcessAbility(PlayerStateMachine state)
     {
         basePhysics.rigidbody.linearVelocity = new Vector2(airMovementSpeed * baseInputControls.horizontalInput, basePhysics.rigidbody.linearVelocityY);
@@ -22,6 +25,7 @@ public class FallingState : BaseState
 
     public override void OnEnter(PlayerStateMachine state)
     {
+        time = coyoteTimeJump;
         base.OnEnter(state);
         baseAnimator.SetBool(FallingParameterID, true);
     }
@@ -34,8 +38,12 @@ public class FallingState : BaseState
 
     public override void ProcessAbility(PlayerStateMachine state)
     {
-
-        if (basePhysics.isGrounded() && baseInputControls.horizontalInput==0    )
+        time -= Time.deltaTime;
+        if (time>0 && baseInputControls.jumpActionRef.action.triggered)
+        {
+            state.ChangeState(state.jump);
+        }
+        if (basePhysics.isGrounded() && baseInputControls.horizontalInput==0)
         {
             state.ChangeState(state.idle);
         }
