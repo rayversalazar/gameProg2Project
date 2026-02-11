@@ -49,6 +49,7 @@ public class RisingState : BaseState
 
         if (basePhysics.rigidbody.linearVelocityY <= 0)
         {
+            state.falling.dontJumpAfterRiseState = true;
             state.ChangeState(state.falling);
         }
     }

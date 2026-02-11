@@ -3,7 +3,10 @@ using UnityEngine;
 public class FallingState : BaseState
 {
     [SerializeField] float airMovementSpeed;
+    [SerializeField] float fallSpeed;
     [SerializeField] float coyoteTimeJump;
+
+    public bool dontJumpAfterRiseState = false;//fix for double jump
     string FallingParameterName = "Falling";
     int FallingParameterID;
     string landingParameterName = "Land";
@@ -12,7 +15,7 @@ public class FallingState : BaseState
     float time;
     public override void FixedProcessAbility(PlayerStateMachine state)
     {
-        basePhysics.rigidbody.linearVelocity = new Vector2(airMovementSpeed * baseInputControls.horizontalInput, basePhysics.rigidbody.linearVelocityY);
+        basePhysics.rigidbody.linearVelocity = new Vector2(airMovementSpeed * baseInputControls.horizontalInput, basePhysics.rigidbody.linearVelocityY+-fallSpeed);
         player.FlipCharacter();
     }
 
@@ -34,12 +37,13 @@ public class FallingState : BaseState
     {
         baseAnimator.SetTrigger(landingParameterID);
         baseAnimator.SetBool(FallingParameterID, false);
+        dontJumpAfterRiseState = false;
     }
 
     public override void ProcessAbility(PlayerStateMachine state)
     {
         time -= Time.deltaTime;
-        if (time>0 && baseInputControls.jumpActionRef.action.triggered)
+        if (time>0 && baseInputControls.jumpActionRef.action.triggered && !dontJumpAfterRiseState)
         {
             state.ChangeState(state.jump);
         }
