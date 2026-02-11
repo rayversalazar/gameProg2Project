@@ -7,9 +7,10 @@ using UnityEngine.InputSystem;
 public class PlayerInputControls : MonoBehaviour
 {
     public InputActionMap playerActionMap;
-
     public InputActionReference movementActionRef;
     public InputActionReference jumpActionRef;
+    public InputActionReference attackActionRef;
+    public InputActionReference dashActionRef;
 
     public float horizontalInput;
     public float jumpInput;

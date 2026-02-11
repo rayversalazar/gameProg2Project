@@ -9,6 +9,8 @@ public class PlayerStateMachine : MonoBehaviour
     public RisingState rising;
     public FallingState falling;
     public KnockbackState knockback;
+    public AttackState attack;
+    public DashState dash;
     private void Start()
     {
         //default state

@@ -40,6 +40,16 @@ public class WalkState : BaseState
         {
             state.ChangeState(state.falling);
         }
+        //transitioning to attack
+        if (baseInputControls.attackActionRef.action.triggered && baseCooldown.currentAttackCooldown <= 0)
+        {
+            state.ChangeState(state.attack);
+        }
+        //transitioning to dash
+        if (baseInputControls.dashActionRef.action.triggered && baseCooldown.currentDashCooldown <= 0)
+        {
+            state.ChangeState(state.dash);
+        }
     }
     public override void Initialize()
     {

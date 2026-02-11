@@ -7,6 +7,8 @@ public class Player : MonoBehaviour, IDamageable
     public PlayerInputControls playerInputControls;
     public Animator animator;
     public PlayerStateMachine stateMachine;
+    public StateCooldown stateCooldown;
+    public SpriteRenderer spriteRenderer;
 
     [Header("Player Attributes")] 
     [SerializeField] int MaxHP;

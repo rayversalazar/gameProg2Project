@@ -8,6 +8,8 @@ public abstract class BaseState : MonoBehaviour
     protected PlayerPhysics basePhysics;
     protected Animator baseAnimator;
     protected PlayerInputControls baseInputControls;
+    protected StateCooldown baseCooldown;
+    protected SpriteRenderer baseSpriteRenderer;
 
     private void Start()
     {
@@ -19,6 +21,8 @@ public abstract class BaseState : MonoBehaviour
         basePhysics = player.playerPhysics;
         baseAnimator = player.animator;
         baseInputControls = player.playerInputControls;
+        baseCooldown = player.stateCooldown;
+        baseSpriteRenderer = player.spriteRenderer;
     }
     public virtual void ProcessAbility(PlayerStateMachine state)
     {

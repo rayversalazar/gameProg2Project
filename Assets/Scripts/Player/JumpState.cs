@@ -13,6 +13,7 @@ public class JumpState : BaseState
     }
     public void Jump()
     {
+        basePhysics.rigidbody.linearVelocity = Vector2.zero;
         basePhysics.rigidbody.linearVelocity = new Vector2(basePhysics.rigidbody.linearVelocityX, jumpForce);
     }
 }

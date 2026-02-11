@@ -6,6 +6,7 @@ public class KnockbackState : BaseState
     [SerializeField] float knockbackForceY;
     [SerializeField] float knockbackStateDuration;
     [SerializeField] float time;
+    int animParameterId = Animator.StringToHash("Knockback");
     public int knockbackDirection;
     public override void Initialize()
     {
@@ -14,6 +15,7 @@ public class KnockbackState : BaseState
     }
     public override void OnEnter(PlayerStateMachine state)
     {
+        baseAnimator.SetBool(animParameterId, true);
         time = knockbackStateDuration;
 
         basePhysics.rigidbody.linearVelocity = Vector2.zero;
@@ -43,5 +45,6 @@ public class KnockbackState : BaseState
     public override void OnExit(PlayerStateMachine state)
     {
         basePhysics.rigidbody.linearVelocity = Vector2.zero;
+        baseAnimator.SetBool(animParameterId, false);
     }
 }
