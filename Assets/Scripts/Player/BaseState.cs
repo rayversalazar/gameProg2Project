@@ -10,8 +10,10 @@ public abstract class BaseState : MonoBehaviour
     protected PlayerInputControls baseInputControls;
     protected StateCooldown baseCooldown;
     protected SpriteRenderer baseSpriteRenderer;
+    protected GameObject baseHitbox;
+    protected GameObject baseHurtbox;
 
-    private void Start()
+    private void Awake()
     {
         Initialize();
     }
@@ -23,6 +25,8 @@ public abstract class BaseState : MonoBehaviour
         baseInputControls = player.playerInputControls;
         baseCooldown = player.stateCooldown;
         baseSpriteRenderer = player.spriteRenderer;
+        baseHitbox = player.hitbox;
+        baseHurtbox = player.hurtbox;
     }
     public virtual void ProcessAbility(PlayerStateMachine state)
     {

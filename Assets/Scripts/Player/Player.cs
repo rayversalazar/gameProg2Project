@@ -9,6 +9,8 @@ public class Player : MonoBehaviour, IDamageable
     public PlayerStateMachine stateMachine;
     public StateCooldown stateCooldown;
     public SpriteRenderer spriteRenderer;
+    public GameObject hitbox;
+    public GameObject hurtbox;
 
     [Header("Player Attributes")] 
     [SerializeField] int MaxHP;

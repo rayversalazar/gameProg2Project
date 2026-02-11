@@ -6,21 +6,14 @@ public class AttackState : BaseState
     float attackDuration;
     int animParameterId = Animator.StringToHash("Attack");
 
-    public override void FixedProcessAbility(PlayerStateMachine state)
-    {
-        base.FixedProcessAbility(state);
-    }
-
-    public override void Initialize()
-    {
-        base.Initialize();
-    }
 
     public override void OnEnter(PlayerStateMachine state)
     {
         base.OnEnter(state);
+        baseHitbox.layer = LayerMask.NameToLayer("Player Hit Box");
         attackDuration = setAttackDuration;
         baseAnimator.SetBool(animParameterId, true);
+        
 
     }
 
@@ -28,6 +21,7 @@ public class AttackState : BaseState
     {
         baseCooldown.startAttackCooldown();
         baseAnimator.SetBool(animParameterId, false);
+        baseHitbox.layer = 0;
     }
 
     public override void ProcessAbility(PlayerStateMachine state)
