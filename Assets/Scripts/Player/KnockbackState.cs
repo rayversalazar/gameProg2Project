@@ -19,13 +19,8 @@ public class KnockbackState : BaseState
         time = knockbackStateDuration;
 
         basePhysics.rigidbody.linearVelocity = Vector2.zero;
-        if (!player.facingRight)
-        {
-            basePhysics.rigidbody.AddForce(new Vector2(-knockbackForceX, knockbackForceY), ForceMode2D.Impulse);
-            return;
-        }
 
-        basePhysics.rigidbody.AddForce(new Vector2(knockbackForceX, knockbackForceY), ForceMode2D.Impulse);
+        basePhysics.rigidbody.AddForce(new Vector2(knockbackDirection*knockbackForceX, knockbackForceY), ForceMode2D.Impulse);
 
 
     }

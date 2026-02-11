@@ -8,7 +8,7 @@ public class EnemyHurtBox : MonoBehaviour
         IDamageDealer damageSource = other.GetComponent<IDamageDealer>();
         if (damageSource != null)
         {
-            enemy.TakeDamage(damageSource.Damage);
+            enemy.TakeDamage(damageSource.Damage, other.transform.position);
         }
     }
     private void OnTriggerExit2D(Collider2D other)

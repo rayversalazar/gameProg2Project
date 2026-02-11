@@ -47,7 +47,7 @@ public class Player : MonoBehaviour, IDamageable
             Debug.Log("yatap");
             return;
         }
-        stateMachine.knockback.knockbackDirection = enemy.x > transform.position.x ? 1 : -1;
+        stateMachine.knockback.knockbackDirection = enemy.x > transform.position.x ? -1 : 1;
         stateMachine.ChangeState(stateMachine.knockback);
     }
     public void TakeDamage(int damage)

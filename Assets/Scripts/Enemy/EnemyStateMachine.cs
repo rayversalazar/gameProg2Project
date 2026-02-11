@@ -5,6 +5,7 @@ public class EnemyStateMachine : MonoBehaviour
 
     public EnemyBaseState enemyCurrentState;
     public EnemyIdleState enemyIdle;
+    public EnemyKnockbackState enemyKnockback;
 
     private void Awake()
     {
@@ -12,11 +13,6 @@ public class EnemyStateMachine : MonoBehaviour
     }
     void Start()
     {
-        //default state
-        //enemyCurrentState = GetComponent<EnemyBaseState>();
-        //enemyCurrentState.Initialize();
-
-       
         enemyCurrentState.OnEnter(this);
     }
 
