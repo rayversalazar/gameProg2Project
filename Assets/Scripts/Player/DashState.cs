@@ -4,6 +4,7 @@ public class DashState : BaseState
 {
     [SerializeField] float dashSpeed;
     [SerializeField] float setDashDuration;
+    public TrailRenderer trail;
     float dashDuration;
     float defaultGravityScale;
     float direction;
@@ -17,6 +18,7 @@ public class DashState : BaseState
     {
         base.Initialize();
         defaultGravityScale = basePhysics.rigidbody.gravityScale;
+        trail.enabled = false;
     }
     public override void OnEnter(PlayerStateMachine state)
     {
@@ -28,7 +30,7 @@ public class DashState : BaseState
         ImmunityWhileDash(true);
         baseSpriteRenderer.color = Color.yellow;
         baseAnimator.SetBool(animParameterID, true);
-
+        trail.enabled = true;
 
     }
 
@@ -40,6 +42,8 @@ public class DashState : BaseState
         baseSpriteRenderer.color = Color.white;
         baseAnimator.SetBool(animParameterID, false);
         baseCooldown.startDashCooldown();
+        trail.enabled = false;
+
     }
 
     public override void ProcessAbility(PlayerStateMachine state)
