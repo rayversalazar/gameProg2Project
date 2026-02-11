@@ -6,10 +6,15 @@ public class Enemy : MonoBehaviour,IDamageable
     public EnemyPhysics enemyPhysics;
     public Animator enemyAnimator;
     public EnemyStateMachine stateMachine;
+    public SpriteRenderer enemyRenderer;
+    public GameObject EnemyHitBox;
+    public EnemyCooldown enemyCooldown;
 
-    [Header("Required Components")]
+    [Header("Enemy Attributes")]
     public int enemyHP;
     public int currentEnemyHP;
+
+    public bool facingRight = false;
 
     public void TakeDamage(int damage, Vector3 player)
     {
@@ -20,7 +25,7 @@ public class Enemy : MonoBehaviour,IDamageable
             return;
         }
         stateMachine.enemyKnockback.knockbackDirection = player.x > transform.position.x ? -1 : 1;
-        stateMachine.ChangeState(stateMachine.enemyKnockback);
+        stateMachine.ChangeState(stateMachine.enemyKnockback);  
 
 
     }
@@ -37,6 +42,20 @@ public class Enemy : MonoBehaviour,IDamageable
     // Update is called once per frame
     void Update()
     {
-        
+        EnemyFlip();
+    }
+
+    private void EnemyFlip()
+    {
+        if (enemyPhysics.PlayerPositionX() == -1 && facingRight)
+        {
+            transform.Rotate(0, 180, 0);
+            facingRight = !facingRight;
+        }
+        else if (enemyPhysics.PlayerPositionX() == 1 && !facingRight)
+        {
+            transform.Rotate(0, 180, 0);
+            facingRight = !facingRight;
+        }
     }
 }

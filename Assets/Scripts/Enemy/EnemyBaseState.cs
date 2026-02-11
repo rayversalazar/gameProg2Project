@@ -7,6 +7,9 @@ public abstract class EnemyBaseState : MonoBehaviour
 
     protected Animator baseEnemyAnimator;
     protected EnemyPhysics baseEnemyPhysics;
+    protected SpriteRenderer baseEnemyRenderer;
+    protected GameObject baseEnemyHitBox;
+    protected EnemyCooldown baseEnemyCooldown;
     void Awake()
     {
         Initialize();
@@ -16,6 +19,9 @@ public abstract class EnemyBaseState : MonoBehaviour
 
         baseEnemyAnimator = enemy.enemyAnimator;
         baseEnemyPhysics = enemy.enemyPhysics;
+        baseEnemyRenderer = enemy.enemyRenderer;
+        baseEnemyHitBox = enemy.EnemyHitBox;
+        baseEnemyCooldown = enemy.enemyCooldown;
         
     }
     public virtual void ProcessAbility(EnemyStateMachine state)

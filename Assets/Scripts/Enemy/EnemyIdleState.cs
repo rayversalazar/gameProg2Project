@@ -17,7 +17,10 @@ public class EnemyIdleState : EnemyBaseState
 
     public override void ProcessAbility(EnemyStateMachine state)
     {
-        
+        if (baseEnemyPhysics.PlayerDetectionZone() && baseEnemyCooldown.currentDetectionCooldown<=0)
+        {
+            state.ChangeState(state.enemyChase);
+        }
     }
     public override void FixedProcessAbility(EnemyStateMachine state)
     {

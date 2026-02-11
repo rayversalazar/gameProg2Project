@@ -16,7 +16,7 @@ public class EnemyKnockbackState : EnemyBaseState
     {
         base.OnEnter(state);
         time = knockbackStateDuration;
-
+        baseEnemyRenderer.color = Color.red;
         baseEnemyPhysics.enemyRigidbody.linearVelocity = Vector2.zero;
 
         baseEnemyPhysics.enemyRigidbody.AddForce(new Vector2(knockbackDirection * knockbackForceX, knockbackForceY), ForceMode2D.Impulse);
@@ -24,7 +24,7 @@ public class EnemyKnockbackState : EnemyBaseState
 
     public override void OnExit(EnemyStateMachine state)
     {
-        base.OnExit(state);
+        baseEnemyRenderer.color = Color.white;
         baseEnemyPhysics.enemyRigidbody.linearVelocity = Vector2.zero;
     }
 
