@@ -214,6 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc94e22148599a4588f18a58947d57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitBox
+  enemy: {fileID: 7331727173850720219}
 --- !u!1 &7088830183149751775
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +436,8 @@ MonoBehaviour:
   enemyCooldown: {fileID: 5133065220463056502}
   enemyHP: 10
   currentEnemyHP: 0
+  damage: 0
+  currentDamage: 0
   facingRight: 0
 --- !u!114 &7117005312768737732
 MonoBehaviour:

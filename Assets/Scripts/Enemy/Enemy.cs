@@ -11,8 +11,10 @@ public class Enemy : MonoBehaviour,IDamageable
     public EnemyCooldown enemyCooldown;
 
     [Header("Enemy Attributes")]
-    public int enemyHP;
+    public int defaultEnemyHP;
     public int currentEnemyHP;
+    public int defaultEnemyDamage;
+    public int currentEnemyDamage;
 
     public bool facingRight = false;
 
@@ -36,7 +38,8 @@ public class Enemy : MonoBehaviour,IDamageable
 
     void Start()
     {
-        currentEnemyHP = enemyHP;
+        currentEnemyHP = defaultEnemyHP;
+        currentEnemyDamage = defaultEnemyDamage;
     }
 
     // Update is called once per frame

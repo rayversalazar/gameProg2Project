@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyHitBox : MonoBehaviour, IDamageDealer
 {
-    public int Damage => 2;
+    [SerializeField] Enemy enemy;
+    public int Damage => enemy.currentEnemyDamage;
 
 }
