@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class StateCooldown : MonoBehaviour
 {
+    [SerializeField]Player player;
+
     [SerializeField] float setAttackCooldown;
     [SerializeField] float setDashCooldown;
     [SerializeField] float setPostHitImmunityCooldown;
@@ -9,13 +11,20 @@ public class StateCooldown : MonoBehaviour
     public float currentDashCooldown;
     public float currentPostHitImmunityCooldown;
 
+    private void Awake()
+    {
+    }
+
     private void Start()
     {
         currentAttackCooldown = setAttackCooldown;
         currentDashCooldown = setDashCooldown;
+        currentPostHitImmunityCooldown = setPostHitImmunityCooldown;
+
     }
     void Update()
     {
+        Debug.Log("state cooldown update");
         if (currentAttackCooldown>0)
         {
             currentAttackCooldown -= Time.deltaTime;
@@ -28,6 +37,7 @@ public class StateCooldown : MonoBehaviour
         {
             currentPostHitImmunityCooldown -= Time.deltaTime;
         }
+        
     }
     public void startAttackCooldown()
     {

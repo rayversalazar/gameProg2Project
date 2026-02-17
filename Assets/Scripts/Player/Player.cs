@@ -18,9 +18,8 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] int damage;
     public int currentDamage;
     public Vector3 currentSpawnPoint;
-    public bool hasBeenHit;
-
     public bool facingRight = true;
+    public bool isHit = false;
     void Start()
     {
         currentHP = setHP;
@@ -31,14 +30,21 @@ public class Player : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-        if (stateCooldown.currentPostHitImmunityCooldown>0 && hasBeenHit)
+        postHitImmunity();
+    }
+
+    public void postHitImmunity()
+    {
+        if (stateCooldown.currentPostHitImmunityCooldown > 0 && !isHit)
         {
             hurtbox.layer = LayerMask.NameToLayer("Player Immunity");
-        } else
+            isHit = !isHit; // switch
+        } else if (stateCooldown.currentPostHitImmunityCooldown <= 0 && isHit)
         {
-            hasBeenHit = false;
+            isHit = !isHit;
             hurtbox.layer = LayerMask.NameToLayer("Player Hurt Box");
         }
+        
     }
 
     public void Respawn()

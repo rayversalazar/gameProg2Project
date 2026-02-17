@@ -4,12 +4,14 @@ using UnityEngine;
 public class HurtBox : MonoBehaviour
 {
     [SerializeField] Player player;
+    [SerializeField]StateCooldown cd;
     private void OnTriggerEnter2D(Collider2D other)
     {
         IDamageDealer damageSource = other.GetComponent<IDamageDealer>();
         if (damageSource != null)
         {
             player.TakeDamage(damageSource.Damage, other.transform.position);
+            cd.startPostHitImmunityCooldown();  
         }
     }
 

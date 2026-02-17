@@ -15,7 +15,7 @@ public class KnockbackState : BaseState
     }
     public override void OnEnter(PlayerStateMachine state)
     {
-        player.hasBeenHit = true;
+
         baseAnimator.SetBool(animParameterId, true);
         time = knockbackStateDuration;
 

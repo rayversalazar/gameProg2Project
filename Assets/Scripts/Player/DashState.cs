@@ -61,13 +61,13 @@ public class DashState : BaseState
     }
     void ImmunityWhileDash(bool setImmunity)
     {
-        Transform hurtbox = transform.Find("HurtBox");
+     
         if (setImmunity == true)
         {
-            hurtbox.gameObject.layer = LayerMask.NameToLayer("Player Immunity");
+            baseHurtbox.layer = LayerMask.NameToLayer("Player Immunity");
         } else
         {
-            hurtbox.gameObject.layer = LayerMask.NameToLayer("Player Hurt Box");
+            baseHurtbox.layer = LayerMask.NameToLayer("Player Hurt Box");
         }
     }
 }
