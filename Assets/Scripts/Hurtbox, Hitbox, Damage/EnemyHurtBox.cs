@@ -11,8 +11,4 @@ public class EnemyHurtBox : MonoBehaviour
             enemy.TakeDamage(damageSource.Damage, other.transform.position);
         }
     }
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        
-    }
 }

@@ -1,16 +1,32 @@
 using UnityEngine;
 
-public class MiniBossRestState : MonoBehaviour
+public class MiniBossRestState : MiniBossBaseState
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public float setRestDuration;
+    public float currentRestDuration;
+    int animationParameterId = Animator.StringToHash("Rest");
+
+    public override void OnEnter(MiniBossStateMachine state)
     {
-        
+        base.OnEnter(state);
+        currentRestDuration = setRestDuration;
+        basePhysics.rigidbody.linearVelocity = Vector2.zero;
+        baseAnimator.SetBool(animationParameterId, true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnExit(MiniBossStateMachine state)
     {
-        
+        baseAnimator.SetBool(animationParameterId, false);
     }
+
+    public override void ProcessAbility(MiniBossStateMachine state)
+    {
+       if (currentRestDuration > 0)
+        {
+            currentRestDuration -= Time.deltaTime;
+            return;
+        }
+        state.ChangeState(state.idle);
+    }
+
 }

@@ -434,10 +434,10 @@ MonoBehaviour:
   enemyRenderer: {fileID: 3552189998854930872}
   EnemyHitBox: {fileID: 6431964877643368822}
   enemyCooldown: {fileID: 5133065220463056502}
-  enemyHP: 10
+  defaultEnemyHP: 20
   currentEnemyHP: 0
-  damage: 0
-  currentDamage: 0
+  defaultEnemyDamage: 5
+  currentEnemyDamage: 0
   facingRight: 0
 --- !u!114 &7117005312768737732
 MonoBehaviour:

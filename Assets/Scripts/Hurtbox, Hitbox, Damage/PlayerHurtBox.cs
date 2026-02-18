@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class HurtBox : MonoBehaviour
+public class PlayerHurtBox : MonoBehaviour
 {
     [SerializeField] Player player;
     [SerializeField]StateCooldown cd;
@@ -13,11 +13,5 @@ public class HurtBox : MonoBehaviour
             player.TakeDamage(damageSource.Damage, other.transform.position);
             cd.startPostHitImmunityCooldown();  
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -1,8 +1,12 @@
 using UnityEngine;
 
-public class MiniBossBaseState : MonoBehaviour
+public abstract class MiniBossBaseState : MonoBehaviour
 {
     protected MiniBoss miniBoss;
+    protected MiniBossPhysics basePhysics;
+    protected SpriteRenderer baseSpriteRenderer;
+    protected GameObject baseHitbox;
+    protected Animator baseAnimator;
     private void Awake()
     {
         Initialize();
@@ -10,6 +14,10 @@ public class MiniBossBaseState : MonoBehaviour
     protected virtual void Initialize()
     {
         miniBoss = GetComponent<MiniBoss>();
+        basePhysics = miniBoss.miniBossPhysics;
+        baseSpriteRenderer = miniBoss.spriteRenderer;
+        baseHitbox = miniBoss.hitbox;
+        baseAnimator = miniBoss.anim;
     }
     public virtual void ProcessAbility(MiniBossStateMachine state)
     {

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MiniBossPhysics : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    public Rigidbody2D rigidbody;
     [SerializeField] Transform chaseRange;
     [SerializeField] float chaseRangeRadius;
     [SerializeField] Transform attackRange;

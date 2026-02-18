@@ -4,6 +4,7 @@ public class MiniBossStateMachine : MonoBehaviour
 {
     public MiniBossBaseState currentState;
     public MiniBossIdleState idle;
+    public MiniBossChaseState chase;
     public MiniBossAttackState attack;
     public MiniBossWindUpState windUp;
     public MiniBossLungeState lunge;
