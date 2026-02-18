@@ -20,7 +20,7 @@ public class KnockbackState : BaseState
         time = knockbackStateDuration;
 
         basePhysics.rigidbody.linearVelocity = Vector2.zero;
-
+        baseSpriteRenderer.color = Color.red;
         basePhysics.rigidbody.AddForce(new Vector2(knockbackDirection*knockbackForceX, knockbackForceY), ForceMode2D.Impulse);
 
 
@@ -42,5 +42,7 @@ public class KnockbackState : BaseState
     {
         basePhysics.rigidbody.linearVelocity = Vector2.zero;
         baseAnimator.SetBool(animParameterId, false);
+        baseSpriteRenderer.color = Color.white;
+
     }
 }

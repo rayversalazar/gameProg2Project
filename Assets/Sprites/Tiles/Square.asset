@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Square
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
   m_Sprite: {fileID: 7482667652216324306, guid: 98812f6924f316b409c9b56a38a85e5e, type: 3}
-  m_Color: {r: 0.051397298, g: 0.073749654, b: 0.103773594, a: 1}
+  m_Color: {r: 0.103773594, g: 0.09153614, b: 0.09328435, a: 1}
   m_Transform:
     e00: 1
     e01: 0

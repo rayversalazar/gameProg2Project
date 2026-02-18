@@ -8,6 +8,7 @@ public class EnemyStateMachine : MonoBehaviour
     public EnemyKnockbackState enemyKnockback;
     public EnemyChaseState enemyChase;
     public EnemyAttackState enemyAttack;
+    public EnemyDeathState death;
 
     private void Awake()
     {

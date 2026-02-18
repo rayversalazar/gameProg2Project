@@ -6,6 +6,7 @@ public abstract class MiniBossBaseState : MonoBehaviour
     protected MiniBossPhysics basePhysics;
     protected SpriteRenderer baseSpriteRenderer;
     protected GameObject baseHitbox;
+    protected GameObject baseHurtBox;
     protected Animator baseAnimator;
     private void Awake()
     {
@@ -18,6 +19,7 @@ public abstract class MiniBossBaseState : MonoBehaviour
         baseSpriteRenderer = miniBoss.spriteRenderer;
         baseHitbox = miniBoss.hitbox;
         baseAnimator = miniBoss.anim;
+        baseHurtBox = miniBoss.hurtbox;
     }
     public virtual void ProcessAbility(MiniBossStateMachine state)
     {

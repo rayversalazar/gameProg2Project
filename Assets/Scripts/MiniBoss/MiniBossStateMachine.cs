@@ -9,6 +9,7 @@ public class MiniBossStateMachine : MonoBehaviour
     public MiniBossWindUpState windUp;
     public MiniBossLungeState lunge;
     public MiniBossRestState rest;
+    public MiniBossDeathState death;
     private void Start()
     {
         //default state

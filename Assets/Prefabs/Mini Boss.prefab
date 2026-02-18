@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 134283926566718114}
   - component: {fileID: 5023461089904133270}
   - component: {fileID: 548290160184490101}
+  - component: {fileID: 1535165010952100845}
   m_Layer: 14
   m_Name: Mini Boss
   m_TagString: Mini Boss
@@ -70,7 +71,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.674906, y: 1.1909664, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2058885, y: 1.2058885, z: 1.2058885}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9153543938925872370}
@@ -124,8 +125,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1807788047
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5500950652209137739, guid: 56cf4ceb4e7ea0043b9887ff73030b95, type: 3}
@@ -175,7 +176,9 @@ MonoBehaviour:
   miniBossPhysics: {fileID: 6388226482121254741}
   spriteRenderer: {fileID: 13404210466695891}
   hitbox: {fileID: 4032459119564568683}
+  hurtbox: {fileID: 3245713612372248061}
   anim: {fileID: 5892520805803987209}
+  stateMachine: {fileID: 552975078118817788}
   defaultHP: 100
   currentHP: 0
   defaultDamage: 10
@@ -241,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniBossPhysics
   rigidbody: {fileID: 4069020749922350725}
   chaseRange: {fileID: 9153543938925872370}
-  chaseRangeRadius: 5.8
+  chaseRangeRadius: 14.6
   attackRange: {fileID: 2034428758334555532}
   attackRangeRadius: 3.38
   target:
@@ -267,6 +270,7 @@ MonoBehaviour:
   windUp: {fileID: 5023461089904133270}
   lunge: {fileID: 5381863184442075471}
   rest: {fileID: 134283926566718114}
+  death: {fileID: 1535165010952100845}
 --- !u!50 &4069020749922350725
 Rigidbody2D:
   serializedVersion: 5
@@ -374,6 +378,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78bac8d344bb5304aadbd3a948363af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniBossAttackState
+--- !u!114 &1535165010952100845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3071105692236500477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 619f8bc12151cfe478f59857fa65b11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MiniBossDeathState
+  fadeSpeed: 0.2
 --- !u!1 &3245713612372248061
 GameObject:
   m_ObjectHideFlags: 0

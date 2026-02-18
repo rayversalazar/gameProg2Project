@@ -39,59 +39,26 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Bg6
-    uniqueID: 3267820675
-    locked: 0
-  - name: Bg5
-    uniqueID: 2511828283
-    locked: 0
-  - name: Bg4
-    uniqueID: 4098326865
-    locked: 0
-  - name: Bg3
-    uniqueID: 131303621
-    locked: 0
-  - name: Bg2
-    uniqueID: 2963488629
-    locked: 0
-  - name: Fog Back 2
-    uniqueID: 1555399805
-    locked: 0
-  - name: Bg1
-    uniqueID: 298652245
-    locked: 0
-  - name: Fog Back 1
-    uniqueID: 2961715887
-    locked: 0
-  - name: Bg0
-    uniqueID: 4028771297
-    locked: 0
-  - name: Background Obj
-    uniqueID: 3024393797
-    locked: 0
-  - name: Enemies
-    uniqueID: 4224507257
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground 1
-    uniqueID: 3954434453
+  - name: Background
+    uniqueID: 697633467
     locked: 0
-  - name: Ground
-    uniqueID: 2426927329
+  - name: Middleground
+    uniqueID: 1697271925
+    locked: 0
+  - name: Environment/Platform
+    uniqueID: 1171322257
+    locked: 0
+  - name: Entities
+    uniqueID: 2487179249
     locked: 0
   - name: Foreground
-    uniqueID: 1092546613
+    uniqueID: 2438701925
     locked: 0
-  - name: Fog Front
-    uniqueID: 2879325567
-    locked: 0
-  - name: Ground Front 1
-    uniqueID: 2352996367
-    locked: 0
-  - name: Ground Front 2
-    uniqueID: 3539907253
+  - name: UI
+    uniqueID: 2493494045
     locked: 0
   m_RenderingLayers:
   - Default

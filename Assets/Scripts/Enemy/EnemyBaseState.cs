@@ -9,6 +9,7 @@ public abstract class EnemyBaseState : MonoBehaviour
     protected EnemyPhysics baseEnemyPhysics;
     protected SpriteRenderer baseEnemyRenderer;
     protected GameObject baseEnemyHitBox;
+    protected GameObject baseEnemyHurtBox;
     protected EnemyCooldown baseEnemyCooldown;
     void Awake()
     {
@@ -21,6 +22,7 @@ public abstract class EnemyBaseState : MonoBehaviour
         baseEnemyPhysics = enemy.enemyPhysics;
         baseEnemyRenderer = enemy.enemyRenderer;
         baseEnemyHitBox = enemy.EnemyHitBox;
+        baseEnemyHurtBox = enemy.EnemyHurtBox;
         baseEnemyCooldown = enemy.enemyCooldown;
         
     }

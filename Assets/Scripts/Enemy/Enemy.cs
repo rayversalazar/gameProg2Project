@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour,IDamageable
     public EnemyStateMachine stateMachine;
     public SpriteRenderer enemyRenderer;
     public GameObject EnemyHitBox;
+    public GameObject EnemyHurtBox;
     public EnemyCooldown enemyCooldown;
 
     [Header("Enemy Attributes")]
@@ -23,7 +24,8 @@ public class Enemy : MonoBehaviour,IDamageable
         currentEnemyHP -= damage;
         if (currentEnemyHP <= 0)
         {
-            gameObject.SetActive(false);
+            stateMachine.ChangeState(stateMachine.death);
+
             return;
         }
         stateMachine.enemyKnockback.knockbackDirection = player.x > transform.position.x ? -1 : 1;

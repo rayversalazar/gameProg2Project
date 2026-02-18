@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 8237423217597682762}
   - component: {fileID: 3171902824505189328}
   - component: {fileID: 5133065220463056502}
+  - component: {fileID: 6290915991253710236}
   m_Layer: 14
   m_Name: Enemy
   m_TagString: Untagged
@@ -253,7 +254,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1625, y: 1.1625, z: 1.1625}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2595765879253589696}
@@ -307,8 +308,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1807788047
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2416634177974962149, guid: 26e75ca9752068342ba676d0b8bbc8f3, type: 3}
@@ -433,6 +434,7 @@ MonoBehaviour:
   stateMachine: {fileID: 778414611422658254}
   enemyRenderer: {fileID: 3552189998854930872}
   EnemyHitBox: {fileID: 6431964877643368822}
+  EnemyHurtBox: {fileID: 4104026832601609284}
   enemyCooldown: {fileID: 5133065220463056502}
   defaultEnemyHP: 20
   currentEnemyHP: 0
@@ -495,6 +497,7 @@ MonoBehaviour:
   enemyKnockback: {fileID: 3171902824505189328}
   enemyChase: {fileID: 7089266469198247906}
   enemyAttack: {fileID: 7117005312768737732}
+  death: {fileID: 6290915991253710236}
 --- !u!114 &8237423217597682762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,7 +512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPhysics
   enemyRigidbody: {fileID: 4755849581225320006}
   detectionZone: {fileID: 3434014728695536997}
-  detectionZoneRadius: 4
+  detectionZoneRadius: 5
   attackZone: {fileID: 7404241643587698499}
   attackZoneRadius: 1.35
   target:
@@ -549,6 +552,19 @@ MonoBehaviour:
   currentAttackCooldown: 0
   setDetectionCooldown: 1
   currentDetectionCooldown: 0
+--- !u!114 &6290915991253710236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088830183149751775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c794e7c01f60e1644a07b1682b2765b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathState
+  fadeSpeed: 1
 --- !u!1 &7404241643587698499
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,9 @@ public class MiniBoss : MonoBehaviour, IDamageable
     public MiniBossPhysics miniBossPhysics;
     public SpriteRenderer spriteRenderer;
     public GameObject hitbox;
+    public GameObject hurtbox;
     public Animator anim;
+    public MiniBossStateMachine stateMachine;
 
     [Header("Mini Boss Attributes")]
     public int defaultHP;
@@ -30,7 +32,7 @@ public class MiniBoss : MonoBehaviour, IDamageable
         currentHP -= damage;
         if (currentHP <= 0)
         {
-            gameObject.SetActive(false);
+            stateMachine.ChangeState(stateMachine.death);
             return;
         }
     }
