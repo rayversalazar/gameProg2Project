@@ -309,7 +309,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1807788047
-  m_SortingLayer: 4
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2416634177974962149, guid: 26e75ca9752068342ba676d0b8bbc8f3, type: 3}
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPhysics
   enemyRigidbody: {fileID: 4755849581225320006}
   detectionZone: {fileID: 3434014728695536997}
-  detectionZoneRadius: 5
+  detectionZoneRadius: 4.6
   attackZone: {fileID: 7404241643587698499}
   attackZoneRadius: 1.35
   target:

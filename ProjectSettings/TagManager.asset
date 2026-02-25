@@ -22,7 +22,7 @@ TagManager:
   - Player Immunity
   - Enemy
   - Interactables
-  - 
+  - Enemy Wall
   - 
   - 
   - 
@@ -45,14 +45,29 @@ TagManager:
   - name: Background
     uniqueID: 697633467
     locked: 0
+  - name: Background Objects
+    uniqueID: 4223496903
+    locked: 0
+  - name: Background Entities
+    uniqueID: 240229621
+    locked: 0
   - name: Middleground
     uniqueID: 1697271925
     locked: 0
   - name: Environment/Platform
     uniqueID: 1171322257
     locked: 0
+  - name: Ground Objects
+    uniqueID: 2272259265
+    locked: 0
   - name: Entities
     uniqueID: 2487179249
+    locked: 0
+  - name: Ground
+    uniqueID: 1904110235
+    locked: 0
+  - name: Foreground Objects
+    uniqueID: 4165880231
     locked: 0
   - name: Foreground
     uniqueID: 2438701925
