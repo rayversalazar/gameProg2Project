@@ -11,6 +11,7 @@ public abstract class EnemyBaseState : MonoBehaviour
     protected GameObject baseEnemyHitBox;
     protected GameObject baseEnemyHurtBox;
     protected EnemyCooldown baseEnemyCooldown;
+    protected EnemyAudio baseSoundFX;
     void Awake()
     {
         Initialize();
@@ -24,6 +25,7 @@ public abstract class EnemyBaseState : MonoBehaviour
         baseEnemyHitBox = enemy.EnemyHitBox;
         baseEnemyHurtBox = enemy.EnemyHurtBox;
         baseEnemyCooldown = enemy.enemyCooldown;
+        baseSoundFX = enemy.sfx;
         
     }
     public virtual void ProcessAbility(EnemyStateMachine state)

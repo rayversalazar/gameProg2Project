@@ -11,6 +11,7 @@ public class Player : MonoBehaviour, IDamageable
     public SpriteRenderer spriteRenderer;
     public GameObject hitbox;
     public GameObject hurtbox;
+    public PlayerAudio sfx;
 
     [Header("Player Attributes")] 
     [SerializeField] int setHP;
