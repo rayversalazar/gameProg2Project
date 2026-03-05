@@ -15,10 +15,10 @@ public class EnemyKnockbackState : EnemyBaseState
     public override void OnEnter(EnemyStateMachine state)
     {
         base.OnEnter(state);
+        baseSoundFX.Play(baseSoundFX.hit);
         time = knockbackStateDuration;
         baseEnemyRenderer.color = Color.red;
         baseEnemyPhysics.enemyRigidbody.linearVelocity = Vector2.zero;
-
         baseEnemyPhysics.enemyRigidbody.AddForce(new Vector2(knockbackDirection * knockbackForceX, knockbackForceY), ForceMode2D.Impulse);
     }
 

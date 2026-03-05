@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour,IDamageable
     public GameObject EnemyHitBox;
     public GameObject EnemyHurtBox;
     public EnemyCooldown enemyCooldown;
+    public EnemyAudio sfx;
 
     [Header("Enemy Attributes")]
     public int defaultEnemyHP;
