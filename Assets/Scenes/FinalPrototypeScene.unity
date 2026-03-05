@@ -2893,6 +2893,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &473049815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1562663619921433522, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+  m_PrefabInstance: {fileID: 1274256559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &480770319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8221,12 +8226,24 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3582838123074610322, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
   m_PrefabInstance: {fileID: 1274256559}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 473049815}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b8421ab0d7e8064f857e72d99bec656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+--- !u!114 &1154648994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473049815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23a2bb07618204a8691f23ec5301b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
 --- !u!114 &1155900021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9103,7 +9120,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1562663619921433522, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1154648994}
   m_SourcePrefab: {fileID: 100100000, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
 --- !u!1 &1310319178
 GameObject:
@@ -32549,6 +32569,7 @@ GameObject:
   - component: {fileID: 1617719020}
   - component: {fileID: 1617719022}
   - component: {fileID: 1617719023}
+  - component: {fileID: 1617719024}
   m_Layer: 15
   m_Name: NPC
   m_TagString: Untagged
@@ -32727,6 +32748,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ddfc2ae69059f4e87a79350af3613d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationNPC
+--- !u!114 &1617719024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617719016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff62523a5b258854192537f24c7ded03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Merchant
 --- !u!1 &1623753650
 GameObject:
   m_ObjectHideFlags: 0

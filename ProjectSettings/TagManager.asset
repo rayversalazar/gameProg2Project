@@ -75,5 +75,8 @@ TagManager:
   - name: UI
     uniqueID: 2493494045
     locked: 0
+  - name: Interactables
+    uniqueID: 2421071551
+    locked: 0
   m_RenderingLayers:
   - Default
