@@ -24,7 +24,6 @@ public class StateCooldown : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log("state cooldown update");
         if (currentAttackCooldown>0)
         {
             currentAttackCooldown -= Time.deltaTime;

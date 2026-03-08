@@ -10,11 +10,10 @@ public class AttackState : BaseState
     public override void OnEnter(PlayerStateMachine state)
     {
         base.OnEnter(state);
+        baseSoundFX.Play(baseSoundFX.attack);
         baseHitbox.layer = LayerMask.NameToLayer("Player Hit Box");
         attackDuration = setAttackDuration;
         baseAnimator.SetBool(animParameterId, true);
-        
-
     }
 
     public override void OnExit(PlayerStateMachine state)
