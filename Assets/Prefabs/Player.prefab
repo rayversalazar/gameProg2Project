@@ -369,6 +369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JumpState
   jumpForce: 6.7
+  defaultAdditionalJumpCount: 1
+  currentAdditionalJumpCount: 1
 --- !u!114 &6904910634477004470
 MonoBehaviour:
   m_ObjectHideFlags: 0

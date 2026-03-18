@@ -4,7 +4,14 @@ using UnityEngine.InputSystem;
 public class JumpState : BaseState
 {
     [SerializeField] float jumpForce;
+    public int defaultAdditionalJumpCount;
+    public int currentAdditionalJumpCount;
 
+    public override void Initialize()
+    {
+        base.Initialize();
+        JumpReset();
+    }
     public override void OnEnter(PlayerStateMachine state)
     {
         base.OnEnter(state);
@@ -16,4 +23,10 @@ public class JumpState : BaseState
         basePhysics.rigidbody.linearVelocity = Vector2.zero;
         basePhysics.rigidbody.linearVelocity = new Vector2(basePhysics.rigidbody.linearVelocityX, jumpForce);
     }
+
+    public void JumpReset()
+    {
+        currentAdditionalJumpCount = defaultAdditionalJumpCount;
+    }
+
 }

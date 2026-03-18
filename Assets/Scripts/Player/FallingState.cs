@@ -3,15 +3,14 @@ using UnityEngine;
 public class FallingState : BaseState
 {
     [SerializeField] float airMovementSpeed;
-    [SerializeField] float fallSpeed;
+    [SerializeField] float fallSpeed = 1f ;
     [SerializeField] float coyoteTimeJump;
 
-    public bool dontJumpAfterRiseState = false;//fix for double jump
+    public bool dontJumpAfterRiseState = false;//fix for double jump in coyote time
     string FallingParameterName = "Falling";
     int FallingParameterID;
     string landingParameterName = "Land";
     int landingParameterID;
-
     float time;
     public override void FixedProcessAbility(PlayerStateMachine state)
     {
@@ -38,6 +37,7 @@ public class FallingState : BaseState
         baseAnimator.SetTrigger(landingParameterID);
         baseAnimator.SetBool(FallingParameterID, false);
         dontJumpAfterRiseState = false;
+       
     }
 
     public override void ProcessAbility(PlayerStateMachine state)
@@ -49,11 +49,18 @@ public class FallingState : BaseState
         }
         if (basePhysics.isGrounded() && baseInputControls.horizontalInput==0)
         {
+            state.jump.JumpReset();
             state.ChangeState(state.idle);
         }
         if (basePhysics.isGrounded() && baseInputControls.horizontalInput != 0)
         {
+            state.jump.JumpReset();
             state.ChangeState(state.walk);
+        }
+        if (state.jump.currentAdditionalJumpCount > 0 && baseInputControls.jumpActionRef.action.triggered && time<=0)
+        {
+            state.jump.currentAdditionalJumpCount--;
+            state.ChangeState(state.jump);
         }
     }
 }
