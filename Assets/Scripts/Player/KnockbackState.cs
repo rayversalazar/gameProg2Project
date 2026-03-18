@@ -8,11 +8,7 @@ public class KnockbackState : BaseState
     [SerializeField] float time;
     int animParameterId = Animator.StringToHash("Knockback");
     public int knockbackDirection;
-    public override void Initialize()
-    {
-        base.Initialize();
-      
-    }
+
     public override void OnEnter(PlayerStateMachine state)
     {
 

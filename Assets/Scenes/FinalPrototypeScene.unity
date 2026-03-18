@@ -9134,6 +9134,26 @@ PrefabInstance:
       propertyPath: movementActionRef
       value: 
       objectReference: {fileID: 1497063148}
+    - target: {fileID: 8534725848208748978, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: wallJumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534725848208748978, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: wallJumpForceX
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534725848208748978, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: wallJumpForceY
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534725848208748978, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: wallJumpDuration
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534725848208748978, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: wallJumpMinimumTime
+      value: 0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

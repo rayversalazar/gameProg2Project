@@ -30,6 +30,8 @@ GameObject:
   - component: {fileID: 2757233146208500593}
   - component: {fileID: 641017718577246809}
   - component: {fileID: 3968280944369510767}
+  - component: {fileID: 5138972707288137316}
+  - component: {fileID: 8534725848208748978}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -53,6 +55,7 @@ Transform:
   - {fileID: 5510223129707202705}
   - {fileID: 7237227208161138065}
   - {fileID: 3911264198569752205}
+  - {fileID: 4789694285729190472}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7442856607996597182
@@ -260,6 +263,8 @@ MonoBehaviour:
   knockback: {fileID: 4136854130119801700}
   attack: {fileID: 5260162683088978641}
   dash: {fileID: 251825778073579201}
+  wallClimb: {fileID: 5138972707288137316}
+  wallJump: {fileID: 8534725848208748978}
 --- !u!114 &4461072509591544979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,12 +302,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPhysics
   rigidbody: {fileID: 3239112071775039916}
+  player: {fileID: 3582838123074610322}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   groundCheckerPosition: {fileID: 5510223129707202705}
   groundCheckerSize: {x: 0.3, y: 0.11}
   castDistance: 0.125
+  wallCheckerPosition: {fileID: 4789694285729190472}
+  wallCheckCastDistance: 0.35
+  wallDetected: 0
 --- !u!114 &3582838123074610322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JumpState
   jumpForce: 6.7
+  defaultAdditionalJumpCount: 1
+  currentAdditionalJumpCount: 1
 --- !u!114 &6904910634477004470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,6 +724,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5138972707288137316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562663619921433522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a1fcb62d67aaf4d8b80625fd635da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallClimbState
+--- !u!114 &8534725848208748978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562663619921433522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e53cb7cb16bace4b86494e71e46d9e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallJumpState
+  wallJumpForceX: 5
+  wallJumpForceY: 10
+  wallJumpDuration: 0.3
+  time: 0
+  wallJumpMinimumTime: 0.08
+  minimumTime: 0
 --- !u!1 &8093754662273029415
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +965,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.075, y: -0.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2297274841769679103}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8709790841522321789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4789694285729190472}
+  m_Layer: 7
+  m_Name: WallCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4789694285729190472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8709790841522321789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.094, y: 0.011, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
