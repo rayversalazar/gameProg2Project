@@ -7,7 +7,7 @@ public class MainMenuManager1 : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("MainScene");
     }
     public void QuitGame()
     {
@@ -17,6 +17,7 @@ public class MainMenuManager1 : MonoBehaviour
     public void OpenSettingsMenu()
     {
         SettingsPanel.SetActive(true);
+        AchievementPanel.transform.SetAsLastSibling();
     }
     public void CloseSettingsMenu()
     {
@@ -25,6 +26,7 @@ public class MainMenuManager1 : MonoBehaviour
     public void OpenAchievementsMenu()
     {
         AchievementPanel.SetActive(true);
+        AchievementPanel.transform.SetAsLastSibling();
     }
     public void CloseAchievementMenu()
     {
