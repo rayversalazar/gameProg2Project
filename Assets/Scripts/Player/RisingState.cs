@@ -51,5 +51,9 @@ public class RisingState : BaseState
             state.falling.dontJumpAfterRiseState = true;
             state.ChangeState(state.falling);
         }
+        if (basePhysics.isWallDetected() && baseInputControls.horizontalInput != 0 && !basePhysics.isGrounded())
+        {
+            state.ChangeState(state.wallClimb);
+        }
     }
 }

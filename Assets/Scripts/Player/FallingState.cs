@@ -62,5 +62,9 @@ public class FallingState : BaseState
             state.jump.currentAdditionalJumpCount--;
             state.ChangeState(state.jump);
         }
+        if (basePhysics.isWallDetected() && baseInputControls.horizontalInput != 0 && !basePhysics.isGrounded())
+        {
+            state.ChangeState(state.wallClimb);
+        }
     }
 }

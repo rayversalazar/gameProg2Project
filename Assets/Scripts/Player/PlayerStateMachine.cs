@@ -11,6 +11,8 @@ public class PlayerStateMachine : MonoBehaviour
     public KnockbackState knockback;
     public AttackState attack;
     public DashState dash;
+    public WallClimbState wallClimb;
+    public WallJumpState wallJump;
     private void Start()
     {
         //default state
