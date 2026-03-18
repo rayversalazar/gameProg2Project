@@ -748,10 +748,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e53cb7cb16bace4b86494e71e46d9e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WallJumpState
-  wallJumpForceX: 0
-  wallJumpForceY: 0
-  wallJumpDuration: 0
+  wallJumpForceX: 5
+  wallJumpForceY: 10
+  wallJumpDuration: 0.3
   time: 0
+  wallJumpMinimumTime: 0.08
+  minimumTime: 0
 --- !u!1 &8093754662273029415
 GameObject:
   m_ObjectHideFlags: 0
