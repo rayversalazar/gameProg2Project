@@ -3,19 +3,24 @@ using UnityEngine;
 public class WallClimbState : BaseState
 {
     float inputDirection;
-    public override void FixedProcessAbility(PlayerStateMachine state)
-    {
-        basePhysics.rigidbody.linearVelocity = Vector2.zero;
-    }
+    float defaultGravityScale;
+    //public override void FixedProcessAbility(PlayerStateMachine state)
+    //{
+    //    basePhysics.rigidbody.linearVelocity = Vector2.zero;
+    //}
 
     public override void OnEnter(PlayerStateMachine state)
     {
         inputDirection = player.facingRight ? -1 : 1;
+        defaultGravityScale = basePhysics.rigidbody.gravityScale;
+        basePhysics.rigidbody.gravityScale = 0;
+        basePhysics.rigidbody.linearVelocity = Vector2.zero;
     }
 
     public override void OnExit(PlayerStateMachine state)
     {
         base.OnExit(state);
+        basePhysics.rigidbody.gravityScale = defaultGravityScale;
     }
 
     public override void ProcessAbility(PlayerStateMachine state)

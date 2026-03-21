@@ -66,5 +66,10 @@ public class FallingState : BaseState
         {
             state.ChangeState(state.wallClimb);
         }
+        if (baseInputControls.attackActionRef.action.triggered && baseCooldown.currentAttackCooldown <= 0)
+        {
+            state.ChangeState(state.attack);
+        }
+        
     }
 }

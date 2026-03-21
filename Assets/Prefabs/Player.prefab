@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 3968280944369510767}
   - component: {fileID: 5138972707288137316}
   - component: {fileID: 8534725848208748978}
+  - component: {fileID: 2601658344566259441}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -754,6 +755,21 @@ MonoBehaviour:
   time: 0
   wallJumpMinimumTime: 0.08
   minimumTime: 0
+--- !u!114 &2601658344566259441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562663619921433522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae23a2bb07618204a8691f23ec5301b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8093754662273029415
 GameObject:
   m_ObjectHideFlags: 0
