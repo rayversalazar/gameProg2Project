@@ -6,7 +6,7 @@ public class FallingState : BaseState
     [SerializeField] float fallSpeed = 1f ;
     [SerializeField] float coyoteTimeJump;
 
-    public bool dontJumpAfterRiseState = false;//fix for double jump in coyote time
+    public bool AfterRiseState = false;//fix for double jump in coyote time
     string FallingParameterName = "Falling";
     int FallingParameterID;
     string landingParameterName = "Land";
@@ -36,14 +36,14 @@ public class FallingState : BaseState
     {
         baseAnimator.SetTrigger(landingParameterID);
         baseAnimator.SetBool(FallingParameterID, false);
-        dontJumpAfterRiseState = false;
+        AfterRiseState = false;
        
     }
 
     public override void ProcessAbility(PlayerStateMachine state)
     {
         time -= Time.deltaTime;
-        if (time>0 && baseInputControls.jumpActionRef.action.triggered && !dontJumpAfterRiseState)
+        if (time>0 && baseInputControls.jumpActionRef.action.triggered && !AfterRiseState)
         {
             state.ChangeState(state.jump);
         }
@@ -66,7 +66,7 @@ public class FallingState : BaseState
         {
             state.ChangeState(state.wallClimb);
         }
-        if (baseInputControls.attackActionRef.action.triggered && baseCooldown.currentAttackCooldown <= 0)
+        if (baseInputControls.attackActionRef.action.triggered)
         {
             state.ChangeState(state.attack);
         }

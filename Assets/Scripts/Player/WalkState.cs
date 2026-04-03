@@ -41,7 +41,7 @@ public class WalkState : BaseState
             state.ChangeState(state.falling);
         }
         //transitioning to attack
-        if (baseInputControls.attackActionRef.action.triggered && baseCooldown.currentAttackCooldown <= 0)
+        if (baseInputControls.attackActionRef.action.triggered)
         {
             state.ChangeState(state.attack);
         }

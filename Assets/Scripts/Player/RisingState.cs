@@ -48,14 +48,14 @@ public class RisingState : BaseState
         }
         if (basePhysics.rigidbody.linearVelocityY <= 0)
         {
-            state.falling.dontJumpAfterRiseState = true;
+            state.falling.AfterRiseState = true;
             state.ChangeState(state.falling);
         }
         if (basePhysics.isWallDetected() && baseInputControls.horizontalInput != 0 && !basePhysics.isGrounded())
         {
             state.ChangeState(state.wallClimb);
         }
-        if (baseInputControls.attackActionRef.action.triggered && baseCooldown.currentAttackCooldown <= 0)
+        if (baseInputControls.attackActionRef.action.triggered)
         {
             state.ChangeState(state.attack);
         }

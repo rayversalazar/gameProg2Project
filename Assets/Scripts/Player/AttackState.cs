@@ -2,35 +2,61 @@ using UnityEngine;
 
 public class AttackState : BaseState
 {
-    [SerializeField] float setAttackDuration;
-    float attackDuration;
-    int animParameterId = Animator.StringToHash("Attack");
+    bool isAttacking;
+    [SerializeField] float attackSpeed = 1f;
+    [SerializeField] float defaultAnimationSpeed;
+    string animParameterName = "Attack";
 
+    int animParameterId;
+    AnimatorStateInfo animationState;
+    public override void Initialize()
+    {
+        base.Initialize(); 
+        animParameterId = Animator.StringToHash(animParameterName);
+        animationState = baseAnimator.GetCurrentAnimatorStateInfo(animParameterId);
+       
+    }
 
     public override void OnEnter(PlayerStateMachine state)
     {
         base.OnEnter(state);
-        baseSoundFX.Play(baseSoundFX.attack);
-        baseHitbox.layer = LayerMask.NameToLayer("Player Hit Box");
-        attackDuration = setAttackDuration;
         baseAnimator.SetBool(animParameterId, true);
+        isAttacking = true;
+        defaultAnimationSpeed = baseAnimator.speed;
+        baseAnimator.speed = attackSpeed;
+        baseSoundFX.Play(baseSoundFX.attack);
+    }
+
+    public void StartAttack()
+    {
+        baseHitbox.layer = LayerMask.NameToLayer("Player Hit Box");
+        basePhysics.rigidbody.linearVelocity = Vector2.zero;
+    }
+    public void EndAttack()
+    {
+        isAttacking = false;
+        baseHitbox.layer = 0;
+        baseAnimator.speed = defaultAnimationSpeed;
     }
 
     public override void OnExit(PlayerStateMachine state)
     {
-        baseCooldown.startAttackCooldown();
         baseAnimator.SetBool(animParameterId, false);
         baseHitbox.layer = 0;
+        baseAnimator.speed = defaultAnimationSpeed;
     }
+
 
     public override void ProcessAbility(PlayerStateMachine state)
     {
-         attackDuration -= Time.deltaTime;
-        if (attackDuration <= 0)
+        if (!isAttacking)
         {
-            if (baseInputControls.horizontalInput==0)
             state.ChangeState(state.idle);
-            else state.ChangeState(state.walk);
+        }
+        if (state.jump.currentAdditionalJumpCount > 0 && baseInputControls.jumpActionRef.action.triggered)
+        {
+            state.jump.currentAdditionalJumpCount--;
+            state.ChangeState(state.jump);
         }
     }
 }
