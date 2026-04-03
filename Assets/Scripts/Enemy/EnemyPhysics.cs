@@ -12,11 +12,16 @@ public class EnemyPhysics : MonoBehaviour
     [SerializeField] Transform playerPosition;
     public bool PlayerDetectionZone()
     {
-        return  Physics2D.OverlapCircle(detectionZone.transform.position, detectionZoneRadius, target);
+        Collider2D detection = Physics2D.OverlapCircle(detectionZone.transform.position, detectionZoneRadius, target);
+        playerPosition = detection.transform;
+        return detection;
     }
     public float PlayerPositionX()
     {
-        return playerPosition.position.x > transform.position.x ? 1f : -1f;
+
+        if (PlayerDetectionZone())
+            return playerPosition.position.x > transform.position.x ? 1f : -1f;
+        else return 0;
     }
     private void OnDrawGizmos()
     {
