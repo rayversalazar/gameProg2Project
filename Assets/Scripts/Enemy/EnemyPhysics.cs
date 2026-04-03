@@ -13,7 +13,11 @@ public class EnemyPhysics : MonoBehaviour
     public bool PlayerDetectionZone()
     {
         Collider2D detection = Physics2D.OverlapCircle(detectionZone.transform.position, detectionZoneRadius, target);
-        playerPosition = detection.transform;
+        if (detection != null)
+        {
+            playerPosition = detection.transform;
+            return true;
+        }
         return detection;
     }
     public float PlayerPositionX()
@@ -21,7 +25,7 @@ public class EnemyPhysics : MonoBehaviour
 
         if (PlayerDetectionZone())
             return playerPosition.position.x > transform.position.x ? 1f : -1f;
-        else return 0;
+        return 0;
     }
     private void OnDrawGizmos()
     {

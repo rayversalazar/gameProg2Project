@@ -26,8 +26,11 @@ public class WallClimbState : BaseState
     public override void ProcessAbility(PlayerStateMachine state)
     {
 
-        if (baseInputControls.horizontalInput != inputDirection) state.ChangeState(state.idle);
-        if (baseInputControls.jumpActionRef.action.triggered && basePhysics.isWallDetected()) state.ChangeState(state.wallJump);
+        if (baseInputControls.horizontalInput != inputDirection) {
+            player.ForceFlipCharacter();
+            state.ChangeState(state.idle); 
+        }
+        if (baseInputControls.jump.triggered && basePhysics.isWallDetected()) state.ChangeState(state.wallJump);
 
     }
 }

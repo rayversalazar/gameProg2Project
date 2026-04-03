@@ -13,7 +13,7 @@ public class Player : MonoBehaviour, IDamageable
     public GameObject hurtbox;
     public PlayerAudio sfx;
 
-    [Header("Player Attributes")] 
+    [Header("Player Attributes")]
     [SerializeField] int setHP;
     public int currentHP;
     [SerializeField] int damage;
@@ -45,7 +45,7 @@ public class Player : MonoBehaviour, IDamageable
             isHit = !isHit;
             hurtbox.layer = LayerMask.NameToLayer("Player Hurt Box");
         }
-        
+
     }
 
     public void Respawn()
@@ -59,13 +59,16 @@ public class Player : MonoBehaviour, IDamageable
         {
             transform.Rotate(0, 180, 0);
             facingRight = !facingRight;// this is like a switch
-        } else if (playerInputControls.horizontalInput  >0 && facingRight)
+        } else if (playerInputControls.horizontalInput > 0 && facingRight)
         {
             transform.Rotate(0, 180, 0);
             facingRight = !facingRight;
         }
     }
-
+    public void ForceFlipCharacter(){
+        transform.Rotate(0, 180, 0);
+        facingRight = !facingRight;
+    }
     public void TakeDamage(int damage, Vector3 enemy)
     {
         currentHP -= damage;

@@ -15,7 +15,7 @@ public class IdleState : BaseState
             state.ChangeState(state.walk);
         }
         //transitioning to idle to jump
-        if (basePhysics.isGrounded() && baseInputControls.jumpActionRef.action.triggered)
+        if (basePhysics.isGrounded() && baseInputControls.jump.triggered)
         {
             state.ChangeState(state.jump);
         }
@@ -25,12 +25,12 @@ public class IdleState : BaseState
             state.ChangeState(state.falling);
         }
         //transitioning to attack
-        if (baseInputControls.attackActionRef.action.triggered)
+        if (baseInputControls.attack.triggered)
         {
             state.ChangeState(state.attack);
         }
         //transitioning to dash
-        if (baseInputControls.dashActionRef.action.triggered && baseCooldown.currentDashCooldown<=0)
+        if (baseInputControls.dash.triggered && baseCooldown.currentDashCooldown<=0)
         {
             state.ChangeState(state.dash);
         }

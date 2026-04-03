@@ -53,7 +53,7 @@ public class AttackState : BaseState
         {
             state.ChangeState(state.idle);
         }
-        if (state.jump.currentAdditionalJumpCount > 0 && baseInputControls.jumpActionRef.action.triggered)
+        if (state.jump.currentAdditionalJumpCount > 0 && baseInputControls.jump.triggered)
         {
             state.jump.currentAdditionalJumpCount--;
             state.ChangeState(state.jump);

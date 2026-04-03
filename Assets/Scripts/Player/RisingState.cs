@@ -55,7 +55,7 @@ public class RisingState : BaseState
         {
             state.ChangeState(state.wallClimb);
         }
-        if (baseInputControls.attackActionRef.action.triggered)
+        if (baseInputControls.attack.triggered)
         {
             state.ChangeState(state.attack);
         }

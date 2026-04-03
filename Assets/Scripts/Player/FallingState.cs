@@ -43,7 +43,7 @@ public class FallingState : BaseState
     public override void ProcessAbility(PlayerStateMachine state)
     {
         time -= Time.deltaTime;
-        if (time>0 && baseInputControls.jumpActionRef.action.triggered && !AfterRiseState)
+        if (time>0 && baseInputControls.jump.triggered && !AfterRiseState)
         {
             state.ChangeState(state.jump);
         }
@@ -57,7 +57,7 @@ public class FallingState : BaseState
             state.jump.JumpReset();
             state.ChangeState(state.walk);
         }
-        if (state.jump.currentAdditionalJumpCount > 0 && baseInputControls.jumpActionRef.action.triggered && time<=0)
+        if (state.jump.currentAdditionalJumpCount > 0 && baseInputControls.jump.triggered && time<=0)
         {
             state.jump.currentAdditionalJumpCount--;
             state.ChangeState(state.jump);
@@ -66,7 +66,7 @@ public class FallingState : BaseState
         {
             state.ChangeState(state.wallClimb);
         }
-        if (baseInputControls.attackActionRef.action.triggered)
+        if (baseInputControls.attack.triggered)
         {
             state.ChangeState(state.attack);
         }

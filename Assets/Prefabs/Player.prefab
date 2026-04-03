@@ -278,16 +278,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfaebea30cac3334285bf3738f2a1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputControls
-  playerActionMap:
-    m_Name: Player
-    m_Id: 2fbb3805-b789-42b2-b68a-68daa6d4f10c
-    m_Asset: {fileID: 0}
-    m_Actions: []
-    m_Bindings: []
-  movementActionRef: {fileID: 0}
-  jumpActionRef: {fileID: 0}
-  attackActionRef: {fileID: 0}
-  dashActionRef: {fileID: 0}
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 21953305-60e1-44f1-9188-c9deb303d8b0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  attack:
+    m_Name: Attack
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: af089333-9ad3-4ffa-9fe8-2df048f98457
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  jump:
+    m_Name: Jump
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5d287e37-ca29-4c6d-b240-c29a875cefe3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  dash:
+    m_Name: Dash
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f77147e1-d66a-42cb-aedc-fc094df3bb93
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   horizontalInput: 0
   jumpInput: 0
 --- !u!114 &5728865167239082616
@@ -396,7 +422,7 @@ MonoBehaviour:
   airMovementSpeed: 5
   fallSpeed: 0.25
   coyoteTimeJump: 0.1
-  dontJumpAfterRiseState: 0
+  AfterRiseState: 0
 --- !u!114 &4432809667145608349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,7 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e86b43cc3898c44ab1bc11bfce5964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackState
-  setAttackDuration: 0.2
+  attackSpeed: 1
+  defaultAnimationSpeed: 0
 --- !u!114 &5415469939528561132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,10 +482,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StateCooldown
   player: {fileID: 3582838123074610322}
-  setAttackCooldown: 0.08
   setDashCooldown: 1.5
   setPostHitImmunityCooldown: 1
-  currentAttackCooldown: 0
   currentDashCooldown: 0
   currentPostHitImmunityCooldown: 0
 --- !u!114 &251825778073579201

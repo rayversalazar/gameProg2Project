@@ -6,33 +6,41 @@ using UnityEngine.InputSystem;
  //handles the input of the player
 public class PlayerInputControls : MonoBehaviour
 {
-    public InputActionMap playerActionMap;
-    public InputActionReference movementActionRef;
-    public InputActionReference jumpActionRef;
-    public InputActionReference attackActionRef;
-    public InputActionReference dashActionRef;
+    public PlayerControls inputs;
+    public InputAction movement;
+    public InputAction attack;
+    public InputAction jump;
+    public InputAction dash;
 
     public float horizontalInput;
     public float jumpInput;
 
+    private void Awake()
+    {
+        inputs = new PlayerControls();
+    }
     void Start()
     {
-       
+        movement = inputs.Player.Movement;
+        attack = inputs.Player.Attack;
+        jump = inputs.Player.Jump;
+        dash = inputs.Player.Dash;
     }
     private void OnEnable()
     {
-        playerActionMap.Enable();
+        inputs.Enable();
     }
     private void OnDisable()
     {
-        playerActionMap.Disable();
+        inputs.Disable();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = movementActionRef.action.ReadValue<float>();
-        jumpInput = jumpActionRef.action.ReadValue<float>();
+        horizontalInput = movement.ReadValue<float>();
+        jumpInput = jump.ReadValue<float>();
     }
     private void FixedUpdate()
     {
