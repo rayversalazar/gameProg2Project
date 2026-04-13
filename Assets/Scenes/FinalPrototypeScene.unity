@@ -3425,7 +3425,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9
+  orthographic size: 7.025
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -17115,10 +17115,10 @@ Tilemap:
   - first: {x: -26, y: -25, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
@@ -18585,10 +18585,10 @@ Tilemap:
   - first: {x: -23, y: -23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
@@ -31474,11 +31474,15 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 2036
+  - m_RefCount: 2034
     m_Data: {fileID: 11400000, guid: 9ea9fd2bcb75ea641a4024268b3a854e, type: 2}
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: acb005d80c5d5494e8663bc8b40f57fb, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 2036
+  - m_RefCount: 2034
     m_Data: {fileID: 7482667652216324306, guid: 98812f6924f316b409c9b56a38a85e5e, type: 3}
+  - m_RefCount: 2
+    m_Data: {fileID: -1232330007, guid: ef71a2215f53a9f4584331ea7b5c6d7e, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 2036
     m_Data:
@@ -31499,10 +31503,10 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2036
+  - m_RefCount: 2034
     m_Data: {r: 0.103773594, g: 0.09153614, b: 0.09328435, a: 1}
-  - m_RefCount: 0
-    m_Data: {r: 4.5e-44, g: 4.5e-44, b: 4.5e-44, a: 4.5e-44}
+  - m_RefCount: 2
+    m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -36076,6 +36080,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 2099195497}
+  - {fileID: 1085425496}
   - {fileID: 619394802}
   - {fileID: 1526013170}
   - {fileID: 1827745531}
@@ -36092,6 +36098,4 @@ SceneRoots:
   - {fileID: 2126051549}
   - {fileID: 1134893305}
   - {fileID: 7496365915953009067}
-  - {fileID: 2099195497}
-  - {fileID: 1085425496}
   - {fileID: 290925514}
