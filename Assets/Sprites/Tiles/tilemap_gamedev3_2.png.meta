@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a80423658f3d44fbfe5ce8cbd6a14a
-      internalID: -1232330007
+      spriteID: 8dc52332dc3273140b7e3c2c120d8188
+      internalID: -1695225812
       vertices: []
       indices: 
       edges: []
@@ -159,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f727dde59c7c56149bd9110b924a6415
-      internalID: 129519462
+      spriteID: 571c6de83a974d6478040ecefcadcb79
+      internalID: -1263836410
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 999bb37104dbe7646a87383c3888ed93
-      internalID: -107200200
+      spriteID: a1484d96ee92e7f4badb1c0f6f19de99
+      internalID: 1792917645
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7a0c25fe7abe4004e94439d328a3ddfe
+    spriteID: e35854431ed0acb48958ff8d87da0b37
     internalID: 0
     vertices: []
     indices: 
@@ -200,15 +200,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries:
-      - key: SpriteEditor.SliceOnImport
-        value: False
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":300.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       tilemap_gamedev3_2_0: 4874248800508087247
-      tilemap_gamedev3_2_1: -1232330007
-      tilemap_gamedev3_2_2: 129519462
-      tilemap_gamedev3_2_3: -107200200
+      tilemap_gamedev3_2_1: -1695225812
+      tilemap_gamedev3_2_2: -1263836410
+      tilemap_gamedev3_2_3: 1792917645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
