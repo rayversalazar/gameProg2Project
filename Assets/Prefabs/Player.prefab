@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a57193855e7a54f8ba6cc6e4d6bd21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JumpState
-  jumpForce: 6.7
+  jumpForce: 8
   defaultAdditionalJumpCount: 1
   currentAdditionalJumpCount: 1
 --- !u!114 &6904910634477004470
