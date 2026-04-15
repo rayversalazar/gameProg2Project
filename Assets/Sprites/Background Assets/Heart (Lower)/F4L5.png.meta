@@ -5,6 +5,18 @@ TextureImporter:
   - first:
       213: -1447729946743796320
     second: F4L5_0
+  - first:
+      213: -7112268998306982991
+    second: F4L5_1
+  - first:
+      213: -4949029781674711498
+    second: F4L5_2
+  - first:
+      213: -7159161156759700037
+    second: F4L5_3
+  - first:
+      213: -2202172191278416351
+    second: F4L5_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,9 +116,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 2000
-        height: 1080
+        y: 778
+        width: 1395
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +129,94 @@ TextureImporter:
       bones: []
       spriteID: 0ad04a9a841a8ebe0800000000000000
       internalID: -1447729946743796320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L5_1
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 886
+        width: 118
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b393e847052c4d90800000000000000
+      internalID: -7112268998306982991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L5_2
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 401
+        width: 1763
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636237872a3815bb0800000000000000
+      internalID: -4949029781674711498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L5_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117
+        width: 1251
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd3099dbdc85ac90800000000000000
+      internalID: -7159161156759700037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L5_4
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 272
+        width: 114
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e3b944f005071e0800000000000000
+      internalID: -2202172191278416351
       vertices: []
       indices: 
       edges: []
@@ -136,6 +236,10 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       F4L5_0: -1447729946743796320
+      F4L5_1: -7112268998306982991
+      F4L5_2: -4949029781674711498
+      F4L5_3: -7159161156759700037
+      F4L5_4: -2202172191278416351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

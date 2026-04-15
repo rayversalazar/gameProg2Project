@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 0d1362cc64982864f86f787bcc952984
+guid: b0b4065e5d5a45c468c98d64428ebac8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5072613464713094182
-    second: F2L5_0
-  - first:
-      213: 7041745960705367688
-    second: F2L5_1
+      213: -8804022827675799312
+    second: F6L6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: F2L5_0
+      name: F6L6_0
       rect:
         serializedVersion: 2
-        x: 440
+        x: 0
         y: 0
-        width: 350
-        height: 166
+        width: 2000
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 624661ff11b856640800000000000000
-      internalID: 5072613464713094182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: F2L5_1
-      rect:
-        serializedVersion: 2
-        x: 1267
-        y: 0
-        width: 598
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 88e926a74ae49b160800000000000000
-      internalID: 7041745960705367688
+      spriteID: 0f034f942e3d1d580800000000000000
+      internalID: -8804022827675799312
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      F2L5_0: 5072613464713094182
-      F2L5_1: 7041745960705367688
+      F6L6_0: -8804022827675799312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,6 +5,51 @@ TextureImporter:
   - first:
       213: 2774843635033375948
     second: F1L4_0
+  - first:
+      213: 5929402506484789335
+    second: F1L4_1
+  - first:
+      213: 2336189382049094725
+    second: F1L4_2
+  - first:
+      213: 8230061124432205848
+    second: F1L4_3
+  - first:
+      213: -3574897685546112377
+    second: F1L4_4
+  - first:
+      213: -2193596678571385501
+    second: F1L4_5
+  - first:
+      213: 7597842487583236171
+    second: F1L4_6
+  - first:
+      213: -2459144656488608558
+    second: F1L4_7
+  - first:
+      213: 5218406555985606075
+    second: F1L4_8
+  - first:
+      213: 1377920392951234510
+    second: F1L4_9
+  - first:
+      213: -2241929961367152480
+    second: F1L4_10
+  - first:
+      213: -598666519777562918
+    second: F1L4_11
+  - first:
+      213: 7182266951076839195
+    second: F1L4_12
+  - first:
+      213: -921143193049722865
+    second: F1L4_13
+  - first:
+      213: 1837360501621273477
+    second: F1L4_14
+  - first:
+      213: 4059798889972568155
+    second: F1L4_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,10 +148,10 @@ TextureImporter:
       name: F1L4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2000
-        height: 1080
+        x: 167
+        y: 91
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +162,336 @@ TextureImporter:
       bones: []
       spriteID: cc40b659599328620800000000000000
       internalID: 2774843635033375948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 99
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75036511a28794250800000000000000
+      internalID: 5929402506484789335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 106
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c53158ddfcb6020800000000000000
+      internalID: 2336189382049094725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 106
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8189889ecfc073270800000000000000
+      internalID: 8230061124432205848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_4
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 108
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a68a0ee79636ec0800000000000000
+      internalID: -3574897685546112377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_5
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 96
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d96496177ce81e0800000000000000
+      internalID: -2193596678571385501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 75
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40e4c3cc75f07960800000000000000
+      internalID: 7597842487583236171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_7
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 87
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc42bac6fc5fddd0800000000000000
+      internalID: -2459144656488608558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_8
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 71
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb577174d118b6840800000000000000
+      internalID: 5218406555985606075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_9
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 37
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfff9efb4b5f1310800000000000000
+      internalID: 1377920392951234510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_10
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 47
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8d761149013e0e0800000000000000
+      internalID: -2241929961367152480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_11
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 35
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade2dbdd8fb11b7f0800000000000000
+      internalID: -598666519777562918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_12
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 45
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f76fc1db98ca360800000000000000
+      internalID: 7182266951076839195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_13
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 61
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00900775217733f0800000000000000
+      internalID: -921143193049722865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_14
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 58
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583387734ad9f7910800000000000000
+      internalID: 1837360501621273477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L4_15
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 37
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b501758a49d475830800000000000000
+      internalID: 4059798889972568155
       vertices: []
       indices: 
       edges: []
@@ -136,6 +511,21 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       F1L4_0: 2774843635033375948
+      F1L4_1: 5929402506484789335
+      F1L4_10: -2241929961367152480
+      F1L4_11: -598666519777562918
+      F1L4_12: 7182266951076839195
+      F1L4_13: -921143193049722865
+      F1L4_14: 1837360501621273477
+      F1L4_15: 4059798889972568155
+      F1L4_2: 2336189382049094725
+      F1L4_3: 8230061124432205848
+      F1L4_4: -3574897685546112377
+      F1L4_5: -2193596678571385501
+      F1L4_6: 7597842487583236171
+      F1L4_7: -2459144656488608558
+      F1L4_8: 5218406555985606075
+      F1L4_9: 1377920392951234510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

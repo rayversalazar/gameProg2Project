@@ -5,6 +5,24 @@ TextureImporter:
   - first:
       213: 2751515675956784513
     second: F1L8_0
+  - first:
+      213: -2399154879603965111
+    second: F1L8_1
+  - first:
+      213: 6505881453264427895
+    second: F1L8_2
+  - first:
+      213: -6476654716097874895
+    second: F1L8_3
+  - first:
+      213: 908043860793510956
+    second: F1L8_4
+  - first:
+      213: 7719418035697537349
+    second: F1L8_5
+  - first:
+      213: 1110514486681257322
+    second: F1L8_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,10 +121,10 @@ TextureImporter:
       name: F1L8_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2000
-        height: 1080
+        x: 1296
+        y: 950
+        width: 213
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +135,138 @@ TextureImporter:
       bones: []
       spriteID: 18da25bdde85f2620800000000000000
       internalID: 2751515675956784513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L8_1
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 875
+        width: 295
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9438f08295d74bed0800000000000000
+      internalID: -2399154879603965111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L8_2
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 847
+        width: 336
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77bd0ac46b8894a50800000000000000
+      internalID: 6505881453264427895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L8_3
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 843
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134b02ab9dc4e16a0800000000000000
+      internalID: -6476654716097874895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L8_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 783
+        width: 219
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c421394150a9c00800000000000000
+      internalID: 908043860793510956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L8_5
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 515
+        width: 246
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541de72edc1e02b60800000000000000
+      internalID: 7719418035697537349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1L8_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2000
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65cf88ba07596f00800000000000000
+      internalID: 1110514486681257322
       vertices: []
       indices: 
       edges: []
@@ -136,6 +286,12 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       F1L8_0: 2751515675956784513
+      F1L8_1: -2399154879603965111
+      F1L8_2: 6505881453264427895
+      F1L8_3: -6476654716097874895
+      F1L8_4: 908043860793510956
+      F1L8_5: 7719418035697537349
+      F1L8_6: 1110514486681257322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

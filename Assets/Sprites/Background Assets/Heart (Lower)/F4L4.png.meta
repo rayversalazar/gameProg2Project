@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: -5088750431713018716
     second: F4L4_0
+  - first:
+      213: -8983182486258257955
+    second: F4L4_1
+  - first:
+      213: 8857718837456341064
+    second: F4L4_2
+  - first:
+      213: 774827536230698040
+    second: F4L4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,9 +113,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 2000
-        height: 1080
+        y: 626
+        width: 589
+        height: 298
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +126,72 @@ TextureImporter:
       bones: []
       spriteID: 4ac312791702169b0800000000000000
       internalID: -5088750431713018716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L4_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 317
+        width: 1650
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfe01aaf13555380800000000000000
+      internalID: -8983182486258257955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L4_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 594
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8480fda3a50fcea70800000000000000
+      internalID: 8857718837456341064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L4_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 1795
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83cc83bf98db0ca00800000000000000
+      internalID: 774827536230698040
       vertices: []
       indices: 
       edges: []
@@ -136,6 +211,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       F4L4_0: -5088750431713018716
+      F4L4_1: -8983182486258257955
+      F4L4_2: 8857718837456341064
+      F4L4_3: 774827536230698040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,6 +5,27 @@ TextureImporter:
   - first:
       213: 1004695337852897684
     second: F4L6_0
+  - first:
+      213: 5531120168931889992
+    second: F4L6_1
+  - first:
+      213: 6753584256764241434
+    second: F4L6_2
+  - first:
+      213: 3096346362310640814
+    second: F4L6_3
+  - first:
+      213: -8130310842473669601
+    second: F4L6_4
+  - first:
+      213: -4145933672004987667
+    second: F4L6_5
+  - first:
+      213: 1294757216847791376
+    second: F4L6_6
+  - first:
+      213: 9136063682794917731
+    second: F4L6_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,9 +125,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 2000
-        height: 1080
+        y: 492
+        width: 150
+        height: 588
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +138,160 @@ TextureImporter:
       bones: []
       spriteID: 4998630361561fd00800000000000000
       internalID: 1004695337852897684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L6_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 510
+        width: 196
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8431f2f0d7c72cc40800000000000000
+      internalID: 5531120168931889992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L6_2
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 728
+        width: 234
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a166a19791d89bd50800000000000000
+      internalID: 6753584256764241434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L6_3
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 734
+        width: 129
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea449138c9e68fa20800000000000000
+      internalID: 3096346362310640814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L6_4
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 772
+        width: 258
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c99d07d555b2f80800000000000000
+      internalID: -8130310842473669601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L6_5
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 665
+        width: 59
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4dfc99a4fa676c0800000000000000
+      internalID: -4145933672004987667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L6_6
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 719
+        width: 289
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015069c24d6e7f110800000000000000
+      internalID: 1294757216847791376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F4L6_7
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 616
+        width: 136
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f865ab381d9ce70800000000000000
+      internalID: 9136063682794917731
       vertices: []
       indices: 
       edges: []
@@ -136,6 +311,13 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       F4L6_0: 1004695337852897684
+      F4L6_1: 5531120168931889992
+      F4L6_2: 6753584256764241434
+      F4L6_3: 3096346362310640814
+      F4L6_4: -8130310842473669601
+      F4L6_5: -4145933672004987667
+      F4L6_6: 1294757216847791376
+      F4L6_7: 9136063682794917731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

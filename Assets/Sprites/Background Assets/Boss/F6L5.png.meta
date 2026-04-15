@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 0d1362cc64982864f86f787bcc952984
+guid: 4c4ad1f8401a8bf48bbbe83c49ccccb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5072613464713094182
-    second: F2L5_0
+      213: 7057042464631676229
+    second: F6L5_0
   - first:
-      213: 7041745960705367688
-    second: F2L5_1
+      213: -94912619977767545
+    second: F6L5_1
+  - first:
+      213: 349961028638443545
+    second: F6L5_2
+  - first:
+      213: 8000900465622467054
+    second: F6L5_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: F2L5_0
+      name: F6L5_0
       rect:
         serializedVersion: 2
-        x: 440
-        y: 0
-        width: 350
-        height: 166
+        x: 1240
+        y: 1034
+        width: 155
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 624661ff11b856640800000000000000
-      internalID: 5072613464713094182
+      spriteID: 54dd7355bb6afe160800000000000000
+      internalID: 7057042464631676229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: F2L5_1
+      name: F6L5_1
       rect:
         serializedVersion: 2
-        x: 1267
-        y: 0
-        width: 598
-        height: 329
+        x: 203
+        y: 853
+        width: 240
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88e926a74ae49b160800000000000000
-      internalID: 7041745960705367688
+      spriteID: 7850689997dceaef0800000000000000
+      internalID: -94912619977767545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6L5_2
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 609
+        width: 29
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918893d83bf4bd400800000000000000
+      internalID: 349961028638443545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F6L5_3
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 599
+        width: 674
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee14fa83598e80f60800000000000000
+      internalID: 8000900465622467054
       vertices: []
       indices: 
       edges: []
@@ -160,8 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      F2L5_0: 5072613464713094182
-      F2L5_1: 7041745960705367688
+      F6L5_0: 7057042464631676229
+      F6L5_1: -94912619977767545
+      F6L5_2: 349961028638443545
+      F6L5_3: 8000900465622467054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
