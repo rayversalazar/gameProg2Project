@@ -360,7 +360,7 @@ MonoBehaviour:
   hitbox: {fileID: 8093754662273029415}
   hurtbox: {fileID: 8355618400926408091}
   sfx: {fileID: 2757233146208500593}
-  setHP: 100
+  setHP: 8
   currentHP: 0
   damage: 4
   currentDamage: 0
