@@ -70,23 +70,20 @@ public class LevelChanger : MonoBehaviour
             var pic = player.playerInputControls ?? player.GetComponent<PlayerInputControls>();
             if (pic != null)
             {
-                // Explicitly disable the action maps and the component
                 if (pic.inputs != null)
                     pic.inputs.Disable();
                 pic.enabled = false;
             }
 
-            // If you also use a PlayerInput component in some setups, disable it too
             var playerInput = player.GetComponent<PlayerInput>();
             if (playerInput != null)
                 playerInput.enabled = false;
 
-            // Optionally disable player logic to be extra safe
             if (player.playerPhysics != null)
                 player.playerPhysics.enabled = false;
             player.enabled = false;
 
-            // Stop movement (prevents sliding)
+            // Stop movement
             Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
             if (rb != null)
                 rb.linearVelocity = Vector2.zero;
@@ -99,23 +96,17 @@ public class LevelChanger : MonoBehaviour
     {
         Debug.Log("Scene changing...");
 
-        // Fade out
         if (SceneFader.Instance != null)
             yield return SceneFader.Instance.StartCoroutine(SceneFader.Instance.FadeOut());
 
-        // Save which door was used
         LevelConnection.ActiveConnection = connection;
 
-        // Load scene
         SceneManager.LoadScene(levelToLoad);
 
-        // Wait 1 frame
         yield return null;
 
-        // 🔥 Hold black screen
         yield return new WaitForSeconds(1f);
 
-        // Fade in
         if (SceneFader.Instance != null)
             yield return SceneFader.Instance.StartCoroutine(SceneFader.Instance.FadeIn());
     }
