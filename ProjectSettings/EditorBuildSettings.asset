@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay/3.unity
     guid: b598b2713f31b9745b78d8257f98d4c8
   - enabled: 0
-    path: Assets/Scenes/Gameplay/12312.unity
+    path: Assets/Scenes/Gameplay/1.2 Camp.unity
     guid: b17957c629b8b4548a5bc4de45c7a873
   - enabled: 1
     path: Assets/Scenes/Gameplay/6.unity
