@@ -21,6 +21,7 @@ public class PlayerInputControls : MonoBehaviour
     }
     void Start()
     {
+        
         movement = inputs.Player.Movement;
         attack = inputs.Player.Attack;
         jump = inputs.Player.Jump;

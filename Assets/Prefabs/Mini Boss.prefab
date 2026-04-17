@@ -126,7 +126,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1807788047
-  m_SortingLayer: 4
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5500950652209137739, guid: 56cf4ceb4e7ea0043b9887ff73030b95, type: 3}
@@ -181,7 +181,7 @@ MonoBehaviour:
   stateMachine: {fileID: 552975078118817788}
   defaultHP: 100
   currentHP: 0
-  defaultDamage: 10
+  defaultDamage: 1
   currentDamage: 0
   facingRight: 0
 --- !u!61 &9014835226977887635
@@ -243,9 +243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniBossPhysics
   rigidbody: {fileID: 4069020749922350725}
-  chaseRange: {fileID: 9153543938925872370}
+  chaseRange: {fileID: 1530819960213023137}
   chaseRangeRadius: 14.6
-  attackRange: {fileID: 2034428758334555532}
+  attackRange: {fileID: 7080027592125955165}
   attackRangeRadius: 3.38
   target:
     serializedVersion: 2
