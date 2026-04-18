@@ -1207,6 +1207,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 128, y: 14, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 3
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 149, y: 14, z: 0}
     second:
       serializedVersion: 2
@@ -2329,8 +2339,8 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 9ea9fd2bcb75ea641a4024268b3a854e, type: 2}
   - m_RefCount: 76
     m_Data: {fileID: 11400000, guid: 86c0a2cbcd2400b4ca461f9dc85da1eb, type: 2}
   - m_RefCount: 69
@@ -2340,14 +2350,14 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 66a825fa08747774594410dc07fc0b16, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 83
+  - m_RefCount: 84
     m_Data: {fileID: 7482667652216324306, guid: 98812f6924f316b409c9b56a38a85e5e, type: 3}
   - m_RefCount: 69
     m_Data: {fileID: 808999568, guid: 5648bf3d0c858c54bb513e16b490a1de, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 1835698848, guid: 5648bf3d0c858c54bb513e16b490a1de, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 158
+  - m_RefCount: 159
     m_Data:
       e00: 1
       e01: 0
@@ -2372,8 +2382,8 @@ Tilemap:
     m_Data: {r: 5e-44, g: 5e-44, b: 5e-44, a: 5e-44}
   - m_RefCount: 75
     m_Data: {r: 1, g: 1, b: 1, a: 1}
-  - m_RefCount: 0
-    m_Data: {r: 9.4879e-41, g: 9.4879e-41, b: 9.4879e-41, a: 9.4879e-41}
+  - m_RefCount: 1
+    m_Data: {r: 1, g: 0, b: 0.024585724, a: 1}
   - m_RefCount: 76
     m_Data: {r: 0, g: 0, b: 0, a: 1}
   - m_RefCount: 7
@@ -2565,6 +2575,14 @@ CompositeCollider2D:
         Y: 210000000
     - - X: 1490000000
         Y: 140000000
+      - X: 1290000000
+        Y: 140000000
+      - X: 1290000000
+        Y: 150000000
+      - X: 1280000000
+        Y: 150000000
+      - X: 1280000000
+        Y: 140000000
       - X: 1050000000
         Y: 140000000
       - X: 1050000000
@@ -2671,6 +2689,10 @@ CompositeCollider2D:
       - {x: 117.00003, y: 21}
     - - {x: 148.99997, y: 13}
       - {x: 148.99997, y: 14}
+      - {x: 129, y: 14.000029}
+      - {x: 128.99997, y: 15}
+      - {x: 128, y: 14.999971}
+      - {x: 127.99998, y: 14}
       - {x: 105, y: 14.000029}
       - {x: 104.99997, y: 22}
       - {x: 104, y: 21.999971}
@@ -2929,7 +2951,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9.275
+  orthographic size: 9.35
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
