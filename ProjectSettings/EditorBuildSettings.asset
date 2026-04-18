@@ -36,11 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay/1.2 Camp.unity
     guid: b17957c629b8b4548a5bc4de45c7a873
   - enabled: 1
-<<<<<<< Updated upstream
-    path: Assets/Gameplay/6.unity
-=======
-    path: Assets/Scenes/Gameplay/6/6.unity
->>>>>>> Stashed changes
+    path: Assets/Gameplay/trash/6.unity
     guid: 9b4635e411ea3f54da2e039886ed5954
   - enabled: 0
     path: Assets/Gameplay/7.unity
@@ -48,19 +44,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Gameplay/8.unity
     guid: e420a0ab0821f864fafca6cc5899ea44
-<<<<<<< Updated upstream
   - enabled: 0
     path: Assets/Gameplay/9.unity
     guid: b5668668f05695f4896c5b306f5b9e21
   - enabled: 0
     path: Assets/Gameplay/10.unity
-=======
-  - enabled: 1
-    path: Assets/Scenes/Gameplay/9/9.unity
-    guid: b5668668f05695f4896c5b306f5b9e21
-  - enabled: 1
-    path: Assets/Scenes/Gameplay/trash/10.unity
->>>>>>> Stashed changes
     guid: d9402de8a860310458ea909a85e6ba91
   - enabled: 0
     path: Assets/Gameplay/TheHeart.unity
@@ -93,5 +81,6 @@ EditorBuildSettings:
     path: Assets/Gameplay/18.unity
     guid: 9ebce3a2d14286a4b9deb14bec93fe10
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings: {fileID: 11400000, guid: bfacecfca479d874494db04dfd5f67b4, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3874c8aee90752a4ca1320acc3035f5f, type: 3}
   m_UseUCBPForAssetBundles: 0

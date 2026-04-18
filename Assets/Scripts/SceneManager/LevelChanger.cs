@@ -10,6 +10,7 @@ public class LevelChanger : MonoBehaviour
     [SerializeField] private string levelToLoad;
     [SerializeField] private Transform playerSpawnPoint;
 
+
     private void Start()
     {
         StartCoroutine(SpawnPlayer());

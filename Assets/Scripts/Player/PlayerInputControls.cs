@@ -11,6 +11,7 @@ public class PlayerInputControls : MonoBehaviour
     public InputAction attack;
     public InputAction jump;
     public InputAction dash;
+    public InputAction pause;
 
     public float horizontalInput;
     public float jumpInput;
@@ -26,6 +27,7 @@ public class PlayerInputControls : MonoBehaviour
         attack = inputs.Player.Attack;
         jump = inputs.Player.Jump;
         dash = inputs.Player.Dash;
+        pause = inputs.Player.PauseGame;
     }
     private void OnEnable()
     {
