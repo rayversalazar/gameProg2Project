@@ -1,0 +1,5 @@
+Healing animation depende ilang health na lang natitira. You cant heal pag isa na lang buhay mo because it acts like a last resort if matatalo mo pa rin ba yung enemies.
+
+Every heal attempt is full health agad para di mahirapan mga naglalaro.
+
+Nakasulat din here If 6 health kasi later pa magiging 7 or 8 health nila

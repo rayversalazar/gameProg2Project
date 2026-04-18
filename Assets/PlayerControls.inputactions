@@ -19,7 +19,7 @@
                     "name": "Jump",
                     "type": "Value",
                     "id": "a4f3f8d4-d1d9-4b1b-bf4e-ddd8b3048143",
-                    "expectedControlType": "Integer",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -50,6 +50,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Healing",
+                    "type": "Value",
+                    "id": "f97c48d6-681c-48a7-a252-e3e8e96c993a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -138,6 +147,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bf6c33d3-2f79-4a79-91ce-430323e51c8c",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Healing",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

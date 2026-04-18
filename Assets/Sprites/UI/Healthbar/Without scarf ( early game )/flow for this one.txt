@@ -1,0 +1,6 @@
+Yung intro is nangyayari lang kapag ioopen yung game so bale may magpplay na animation ganon and the rest static na.
+
+For this one pwede gamitin ulit yung frames to make it blink occasionally ganon.
+
+
+Mas maganda na matagal yung first frame bago siya dumilat ganon.
