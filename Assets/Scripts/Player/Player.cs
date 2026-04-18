@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour, IDamageable
+public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
 {
     [Header("Required Components")]
     public PlayerPhysics playerPhysics;
@@ -84,5 +84,10 @@ public class Player : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
 
+    }
+
+    public void setSpawnPoint(Vector3 newSpawnPoint)
+    {
+        currentSpawnPoint = newSpawnPoint;
     }
 }

@@ -4,6 +4,7 @@ public class WallClimbState : BaseState
 {
     float inputDirection;
     float defaultGravityScale;
+    int animParameter = Animator.StringToHash("WallClimb");
     //public override void FixedProcessAbility(PlayerStateMachine state)
     //{
     //    basePhysics.rigidbody.linearVelocity = Vector2.zero;
@@ -15,12 +16,15 @@ public class WallClimbState : BaseState
         defaultGravityScale = basePhysics.rigidbody.gravityScale;
         basePhysics.rigidbody.gravityScale = 0;
         basePhysics.rigidbody.linearVelocity = Vector2.zero;
+        baseAnimator.SetBool(animParameter, true);
     }
 
     public override void OnExit(PlayerStateMachine state)
     {
         base.OnExit(state);
         basePhysics.rigidbody.gravityScale = defaultGravityScale;
+        baseAnimator.SetBool(animParameter, false);
+
     }
 
     public override void ProcessAbility(PlayerStateMachine state)

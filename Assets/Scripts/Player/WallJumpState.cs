@@ -8,6 +8,8 @@ public class WallJumpState : BaseState
     [SerializeField] float time;
     [SerializeField] float wallJumpMinimumTime;
     [SerializeField] float minimumTime;
+    int animParameter = Animator.StringToHash("WallJump");
+
 
 
     float oppositeDirection;
@@ -21,6 +23,7 @@ public class WallJumpState : BaseState
         basePhysics.rigidbody.AddForce(new Vector2(wallJumpForceX * oppositeDirection, wallJumpForceY), ForceMode2D.Impulse);
         time = wallJumpDuration;
         minimumTime = wallJumpMinimumTime;
+        baseAnimator.SetBool(animParameter, true);
     }
 
     public override void ProcessAbility(PlayerStateMachine state)
@@ -34,5 +37,6 @@ public class WallJumpState : BaseState
     public override void OnExit(PlayerStateMachine state)
     {
         base.OnExit(state);
+        baseAnimator.SetBool(animParameter, false);
     }
 }

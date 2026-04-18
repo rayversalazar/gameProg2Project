@@ -3425,7 +3425,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3450,7 +3450,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.363647, y: 3.0531216, z: -10}
+  m_LocalPosition: {x: -6.6497154, y: 3.0531197, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9091,10 +9091,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1526013170}
     m_Modifications:
-    - target: {fileID: 251825778073579201, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
-      propertyPath: setDashDuration
-      value: 0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 1562663619921433522, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -9138,6 +9134,10 @@ PrefabInstance:
     - target: {fileID: 2297274841769679103, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6904910634477004470, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: gravityMultiplier
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
