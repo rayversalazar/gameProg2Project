@@ -441,7 +441,7 @@ MonoBehaviour:
   sfx: {fileID: 8015472701765658787}
   defaultEnemyHP: 20
   currentEnemyHP: 0
-  defaultEnemyDamage: 5
+  defaultEnemyDamage: 1
   currentEnemyDamage: 0
   facingRight: 0
 --- !u!114 &8015472701765658787

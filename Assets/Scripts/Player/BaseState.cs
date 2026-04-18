@@ -13,6 +13,7 @@ public abstract class BaseState : MonoBehaviour
     protected GameObject baseHitbox;
     protected GameObject baseHurtbox;
     protected PlayerAudio baseSoundFX;
+    protected HealthUI baseHealthUI;
 
     private void Awake()
     {
@@ -29,6 +30,7 @@ public abstract class BaseState : MonoBehaviour
         baseHitbox = player.hitbox;
         baseHurtbox = player.hurtbox;
         baseSoundFX = player.sfx;
+        baseHealthUI = player.healthUI;
     }
     public virtual void ProcessAbility(PlayerStateMachine state)
     {

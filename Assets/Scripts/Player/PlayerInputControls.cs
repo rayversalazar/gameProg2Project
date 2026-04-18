@@ -11,9 +11,11 @@ public class PlayerInputControls : MonoBehaviour
     public InputAction attack;
     public InputAction jump;
     public InputAction dash;
+    public InputAction heal;
 
     public float horizontalInput;
     public float jumpInput;
+    public float healInput;
 
     private void Awake()
     {
@@ -21,7 +23,7 @@ public class PlayerInputControls : MonoBehaviour
     }
     void Start()
     {
-        
+        heal = inputs.Player.Healing;
         movement = inputs.Player.Movement;
         attack = inputs.Player.Attack;
         jump = inputs.Player.Jump;
@@ -42,6 +44,8 @@ public class PlayerInputControls : MonoBehaviour
     {
         horizontalInput = movement.ReadValue<float>();
         jumpInput = jump.ReadValue<float>();
+        healInput = heal.ReadValue<float>();
+
     }
     private void FixedUpdate()
     {

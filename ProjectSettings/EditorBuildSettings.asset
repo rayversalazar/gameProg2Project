@@ -36,7 +36,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay/1.2 Camp.unity
     guid: b17957c629b8b4548a5bc4de45c7a873
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Gameplay/6.unity
+=======
+    path: Assets/Scenes/Gameplay/6/6.unity
+>>>>>>> Stashed changes
     guid: 9b4635e411ea3f54da2e039886ed5954
   - enabled: 0
     path: Assets/Gameplay/7.unity
@@ -44,11 +48,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Gameplay/8.unity
     guid: e420a0ab0821f864fafca6cc5899ea44
+<<<<<<< Updated upstream
   - enabled: 0
     path: Assets/Gameplay/9.unity
     guid: b5668668f05695f4896c5b306f5b9e21
   - enabled: 0
     path: Assets/Gameplay/10.unity
+=======
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/9/9.unity
+    guid: b5668668f05695f4896c5b306f5b9e21
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/trash/10.unity
+>>>>>>> Stashed changes
     guid: d9402de8a860310458ea909a85e6ba91
   - enabled: 0
     path: Assets/Gameplay/TheHeart.unity

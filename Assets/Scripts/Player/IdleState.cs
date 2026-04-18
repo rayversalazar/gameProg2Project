@@ -34,6 +34,11 @@ public class IdleState : BaseState
         {
             state.ChangeState(state.dash);
         }
+        //transitioning to heal
+        if (baseInputControls.healInput>0f && player.currentHP<8)
+        {
+            state.ChangeState(state.healing);
+        }
     }
     public override void OnEnter(PlayerStateMachine state)
     {
