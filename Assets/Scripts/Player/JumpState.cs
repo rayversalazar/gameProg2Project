@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class JumpState : BaseState
 {
     [SerializeField] float jumpForce;
-    public int defaultAdditionalJumpCount;
-    public int currentAdditionalJumpCount;
+    public int jumpCount;
+    public int currentJumpCount;
 
     public override void Initialize()
     {
@@ -15,6 +15,7 @@ public class JumpState : BaseState
     public override void OnEnter(PlayerStateMachine state)
     {
         base.OnEnter(state);
+        state.jump.currentJumpCount--;
         Jump();
         state.ChangeState(state.rising);
     }
@@ -26,7 +27,7 @@ public class JumpState : BaseState
 
     public void JumpReset()
     {
-        currentAdditionalJumpCount = defaultAdditionalJumpCount;
+        currentJumpCount = jumpCount;
     }
 
 }

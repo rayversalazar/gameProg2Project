@@ -18,67 +18,67 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalPrototypeScene.unity
     guid: f658341e331df554786b47ac7498addf
   - enabled: 0
-    path: Assets/Scenes/Gameplay/5.unity
+    path: Assets/Gameplay/5.unity
     guid: c6a056eb288a5f14fad8c36d1181ace2
   - enabled: 0
-    path: Assets/Scenes/Gameplay/0.unity
+    path: Assets/Gameplay/0.unity
     guid: 13c0742d1a2e0204f8ca45f9c1287222
   - enabled: 0
-    path: Assets/Scenes/Gameplay/1.unity
+    path: Assets/Gameplay/1.unity
     guid: 64a4af3136ea5114296cdb5eefb920bd
   - enabled: 0
-    path: Assets/Scenes/Gameplay/2.unity
+    path: Assets/Gameplay/2.unity
     guid: eb6bd2498568445439cd8b727caca36e
   - enabled: 0
-    path: Assets/Scenes/Gameplay/3.unity
+    path: Assets/Gameplay/3.unity
     guid: b598b2713f31b9745b78d8257f98d4c8
   - enabled: 0
     path: Assets/Scenes/Gameplay/1.2 Camp.unity
     guid: b17957c629b8b4548a5bc4de45c7a873
   - enabled: 1
-    path: Assets/Scenes/Gameplay/6.unity
+    path: Assets/Gameplay/6.unity
     guid: 9b4635e411ea3f54da2e039886ed5954
   - enabled: 0
-    path: Assets/Scenes/Gameplay/7.unity
+    path: Assets/Gameplay/7.unity
     guid: 89a797c3843b0d14da3358ce071d49b5
   - enabled: 0
-    path: Assets/Scenes/Gameplay/8.unity
+    path: Assets/Gameplay/8.unity
     guid: e420a0ab0821f864fafca6cc5899ea44
   - enabled: 0
-    path: Assets/Scenes/Gameplay/9.unity
+    path: Assets/Gameplay/9.unity
     guid: b5668668f05695f4896c5b306f5b9e21
   - enabled: 0
-    path: Assets/Scenes/Gameplay/10.unity
+    path: Assets/Gameplay/10.unity
     guid: d9402de8a860310458ea909a85e6ba91
   - enabled: 0
-    path: Assets/Scenes/Gameplay/TheHeart.unity
+    path: Assets/Gameplay/TheHeart.unity
     guid: d3e2b666a785bee4185ef16fba75a068
   - enabled: 0
-    path: Assets/Scenes/Gameplay/4.unity
+    path: Assets/Gameplay/4.unity
     guid: d79fc0ac26bbc9d4ca6704e4223a4457
   - enabled: 0
-    path: Assets/Scenes/Gameplay/13.unity
+    path: Assets/Gameplay/13.unity
     guid: 413ea2f101f956443b961e976096b171
   - enabled: 0
-    path: Assets/Scenes/Gameplay/11.unity
+    path: Assets/Gameplay/11.unity
     guid: d8270b9940b16974d9287842e29c738c
   - enabled: 0
-    path: Assets/Scenes/Gameplay/12.unity
+    path: Assets/Gameplay/12.unity
     guid: 6312a9ac1f927c04cac023c66206569d
   - enabled: 1
-    path: Assets/Scenes/Gameplay/14.unity
+    path: Assets/Gameplay/14.unity
     guid: 5e1de68e3cc0fc84580e5aed78adfdad
   - enabled: 1
-    path: Assets/Scenes/Gameplay/15.unity
+    path: Assets/Gameplay/15.unity
     guid: 21d91906be5c589418742a83174675c0
   - enabled: 1
-    path: Assets/Scenes/Gameplay/16.unity
+    path: Assets/Gameplay/16.unity
     guid: eb8a8af5f5613ae4ea52a4c571c04cab
   - enabled: 1
-    path: Assets/Scenes/Gameplay/17.unity
+    path: Assets/Gameplay/17.unity
     guid: c40eb74e37fbfc942b8365c21157840a
   - enabled: 0
-    path: Assets/Scenes/Gameplay/18.unity
+    path: Assets/Gameplay/18.unity
     guid: 9ebce3a2d14286a4b9deb14bec93fe10
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
