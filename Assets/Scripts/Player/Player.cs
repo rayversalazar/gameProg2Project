@@ -1,7 +1,7 @@
 using UnityEngine;
 using static UnityEditorInternal.ReorderableList;
 
-public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
+public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint, IRespawn
 {
     [Header("Required Components")]
     public PlayerPhysics playerPhysics;
@@ -14,6 +14,7 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
     public GameObject hurtbox;
     public PlayerAudio sfx;
     public HealthUI healthUI;
+    public FadeScreen fadescreen;
 
     [Header("Player Attributes")]
     [SerializeField] int setHP;
@@ -52,7 +53,8 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
 
     public void Respawn()
     {
-        transform.position = currentSpawnPoint;
+        Debug.Log("umabot dito bai");
+        stateMachine.ChangeState(stateMachine.wakeUp);
     }
 
     public void FlipCharacter()
@@ -100,4 +102,6 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
         currentHP = Mathf.Clamp(currentHP, 0, setHP);
         healthUI.UpdateHealthBar(currentHP, setHP);
     }
+
+
 }

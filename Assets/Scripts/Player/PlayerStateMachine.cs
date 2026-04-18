@@ -14,6 +14,7 @@ public class PlayerStateMachine : MonoBehaviour
     public WallClimbState wallClimb;
     public WallJumpState wallJump;
     public HealingState healing;
+    public WakeUpState wakeUp;
     private void Start()
     {
         //default state

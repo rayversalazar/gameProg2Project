@@ -39,6 +39,14 @@ public class HealthUI : MonoBehaviour
         
         animator.enabled = animationSwitch;
     }
+    public void AfterHealAnimationStart()
+    {
+
+    }
+    public void AfterHealAnimationEnd()
+    {
+
+    }
     public void refreshUI(int currentHP)
     {
         if (currentHP <= 1)
