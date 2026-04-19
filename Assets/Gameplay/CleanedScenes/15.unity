@@ -2692,7 +2692,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 7.0999994
+  orthographic size: 7.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2717,7 +2717,7 @@ Transform:
   m_GameObject: {fileID: 871661985}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.058495, y: -2.8200045, z: -10}
+  m_LocalPosition: {x: 53.258892, y: -2.8200006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4039,6 +4039,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+--- !u!1 &1609880891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5260102851583978733, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+  m_PrefabInstance: {fileID: 1609880890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1645195785 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4461072509591544979, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
@@ -4337,7 +4342,7 @@ GameObject:
   - component: {fileID: 1730404472}
   - component: {fileID: 1730404471}
   - component: {fileID: 1730404470}
-  m_Layer: 20
+  m_Layer: 21
   m_Name: unclimbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6914,6 +6919,10 @@ PrefabInstance:
       propertyPath: container
       value: 
       objectReference: {fileID: 39203165}
+    - target: {fileID: 8993284249124668414, guid: ba59640c9abe77b46870d3770fee0436, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1609880891}
     - target: {fileID: 8993284249124668414, guid: ba59640c9abe77b46870d3770fee0436, type: 3}
       propertyPath: playerInput
       value: 
@@ -44581,20 +44590,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 2010571179}
     m_ColliderPaths:
-    - - X: 1034242112
-        Y: 336381376
-      - X: 97947544
-        Y: 336381376
-      - X: 97947544
-        Y: -591127488
-      - X: 1034242112
-        Y: -591127488
+    - - X: 996213696
+        Y: 23803254
+      - X: 123383480
+        Y: 23803254
+      - X: 123383480
+        Y: -322635264
+      - X: 996213696
+        Y: -322635264
   m_CompositePaths:
     m_Paths:
-    - - {x: 103.42418, y: -59.11275}
-      - {x: 103.42418, y: 33.638138}
-      - {x: 9.794755, y: 33.638107}
-      - {x: 9.794785, y: -59.11275}
+    - - {x: 99.62134, y: -32.263527}
+      - {x: 99.62134, y: 2.3803253}
+      - {x: 12.338348, y: 2.380296}
+      - {x: 12.338378, y: -32.263527}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -44706,7 +44715,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 1
   m_CompositeOrder: 0
-  m_Offset: {x: 56.60948, y: -12.737305}
+  m_Offset: {x: 55.97986, y: -14.941601}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -44716,7 +44725,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 93.629456, y: 92.750885}
+  m_Size: {x: 87.28302, y: 34.643852}
   m_EdgeRadius: 0
 --- !u!4 &2010571180
 Transform:

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject container;
-
+    public GameObject healthBar;
     private PlayerControls controls;
     public PlayerInputControls playerInput;
     private void Awake()
@@ -47,12 +47,14 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 1f;
             container.SetActive(false);
             playerInput.inputs.Player.Enable();
+            healthBar.SetActive(true);
         }
         else
         {
             Debug.Log("PauseMenu: Pausing game");
             Time.timeScale = 0f;
             playerInput.inputs.Player.Disable();
+            healthBar.SetActive(false);
         }
     }
 
@@ -63,6 +65,7 @@ public class PauseMenu : MonoBehaviour
         container.SetActive(false);
         Time.timeScale = 1f;
         playerInput.inputs.Player.Enable();
+        healthBar.SetActive(true);
     }
 
     public void MainMenuButton()
