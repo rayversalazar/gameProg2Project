@@ -19,7 +19,7 @@
                     "name": "Jump",
                     "type": "Value",
                     "id": "a4f3f8d4-d1d9-4b1b-bf4e-ddd8b3048143",
-                    "expectedControlType": "",
+                    "expectedControlType": "Integer",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -43,7 +43,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Pause",
+                    "name": "PauseGame",
                     "type": "Button",
                     "id": "d37378cd-8fa9-4b69-9f07-61cd14c42253",
                     "expectedControlType": "",
@@ -52,13 +52,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Healing",
-                    "type": "Value",
-                    "id": "f97c48d6-681c-48a7-a252-e3e8e96c993a",
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "183c125c-c016-4d8b-99cd-08cc7f3b593f",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -146,18 +146,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pause",
+                    "action": "PauseGame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "bf6c33d3-2f79-4a79-91ce-430323e51c8c",
-                    "path": "<Keyboard>/q",
+                    "id": "f88f826a-16eb-4b81-8528-f35a7e0c9db4",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6eb36e32-425e-4e8c-8473-d71189acdc23",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Healing",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

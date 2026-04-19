@@ -1,82 +1,75 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenu, overlay;
-    public Animator playerAnimator;
+    public GameObject container;
 
     private PlayerControls controls;
-    private bool isPaused = false;
-
-    void Awake()
+    public PlayerInputControls playerInput;
+    private void Awake()
     {
+        Debug.Log("PauseMenu: Awake - Initializing controls");
+
         controls = new PlayerControls();
 
-        controls.Player.Pause.performed += ctx => TogglePause();
+        controls.Player.PauseGame.performed += ctx =>
+        {
+            Debug.Log("PauseMenu: Escape key pressed!");
+            TogglePause();
+        };
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
+        Debug.Log("PauseMenu: Enabled input system");
         controls.Enable();
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
+        Debug.Log("PauseMenu: Disabled input system");
         controls.Disable();
     }
 
     void TogglePause()
     {
-        if (isPaused)
-            ResumeGame();
+        bool isActive = container.activeSelf;
+
+        Debug.Log("PauseMenu: TogglePause called. Current state = " + isActive);
+
+        container.SetActive(true);
+
+        if (isActive)
+        {
+            Debug.Log("PauseMenu: Resuming game");
+            Time.timeScale = 1f;
+            container.SetActive(false);
+            playerInput.inputs.Player.Enable();
+        }
         else
-            PauseGame();
+        {
+            Debug.Log("PauseMenu: Pausing game");
+            Time.timeScale = 0f;
+            playerInput.inputs.Player.Disable();
+        }
     }
 
-    public void PauseGame()
+    public void ResumeButton()
     {
-        overlay.SetActive(true);
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
+        Debug.Log("PauseMenu: Resume button clicked");
 
-        controls.Player.Movement.Disable();
-        controls.Player.Jump.Disable();
-        controls.Player.Attack.Disable();
-        controls.Player.Dash.Disable();
-
-        if (playerAnimator != null)
-            playerAnimator.speed = 0f;
-
-        isPaused = true;
-    }
-
-    public void ResumeGame()
-    {
-        overlay.SetActive(false);
-        pauseMenu.SetActive(false);
+        container.SetActive(false);
         Time.timeScale = 1f;
-
-        controls.Player.Movement.Enable();
-        controls.Player.Jump.Enable();
-        controls.Player.Attack.Enable();
-        controls.Player.Dash.Enable();
-
-        if (playerAnimator != null)
-            playerAnimator.speed = 1f;
-
-        isPaused = false;
+        playerInput.inputs.Player.Enable();
     }
 
-    public void RestartLevel()
+    public void MainMenuButton()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+        Debug.Log("PauseMenu: Loading Main Menu");
 
-    public void QuitToMenu()
-    {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu"); 
+        SceneManager.LoadScene("MainMenu");
     }
 }
