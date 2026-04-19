@@ -1424,6 +1424,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3310146366383753284, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4777471428137310200, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -5759,7 +5763,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -21068,14 +21072,14 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1608369796}
-  - {fileID: 603861893}
-  - {fileID: 2055173826}
-  - {fileID: 762050024}
   - {fileID: 957505742}
   - {fileID: 221081746}
   - {fileID: 2147197810}
-  - {fileID: 505646888}
   - {fileID: 2107580119}
+  - {fileID: 603861893}
+  - {fileID: 2055173826}
+  - {fileID: 762050024}
+  - {fileID: 505646888}
   - {fileID: 1991637584}
   - {fileID: 1432477572}
   - {fileID: 302628673}
