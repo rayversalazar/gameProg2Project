@@ -124,10 +124,10 @@ TextureImporter:
       name: F4L6_0
       rect:
         serializedVersion: 2
-        x: 174
-        y: 496
-        width: 230
-        height: 584
+        x: 1039
+        y: 666
+        width: 727
+        height: 414
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
