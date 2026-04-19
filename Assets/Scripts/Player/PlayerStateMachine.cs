@@ -13,6 +13,8 @@ public class PlayerStateMachine : MonoBehaviour
     public DashState dash;
     public WallClimbState wallClimb;
     public WallJumpState wallJump;
+    public HealingState healing;
+    public WakeUpState wakeUp;
     private void Start()
     {
         //default state

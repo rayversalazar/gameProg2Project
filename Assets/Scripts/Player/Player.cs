@@ -1,6 +1,7 @@
 using UnityEngine;
+using static UnityEditorInternal.ReorderableList;
 
-public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
+public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint, IRespawn
 {
     [Header("Required Components")]
     public PlayerPhysics playerPhysics;
@@ -12,6 +13,8 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
     public GameObject hitbox;
     public GameObject hurtbox;
     public PlayerAudio sfx;
+    public HealthUI healthUI;
+    public FadeScreen fadescreen;
 
     [Header("Player Attributes")]
     [SerializeField] int setHP;
@@ -50,7 +53,8 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
 
     public void Respawn()
     {
-        transform.position = currentSpawnPoint;
+        Debug.Log("umabot dito bai");
+        stateMachine.ChangeState(stateMachine.wakeUp);
     }
 
     public void FlipCharacter()
@@ -72,11 +76,13 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
     public void TakeDamage(int damage, Vector3 enemy)
     {
         currentHP -= damage;
-        if (currentHP <= 0)
+        currentHP =  Mathf.Clamp(currentHP, 0, setHP);
+        if (currentHP == 0)
         {
             Debug.Log("yatap");
             return;
         }
+        healthUI.UpdateHealthBar(currentHP, setHP);
         stateMachine.knockback.knockbackDirection = enemy.x > transform.position.x ? -1 : 1;
         stateMachine.ChangeState(stateMachine.knockback);
         stateCooldown.startPostHitImmunityCooldown();
@@ -90,4 +96,12 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint
     {
         currentSpawnPoint = newSpawnPoint;
     }
+    public void HealHP(int amount)
+    {
+        currentHP += amount;
+        currentHP = Mathf.Clamp(currentHP, 0, setHP);
+        healthUI.UpdateHealthBar(currentHP, setHP);
+    }
+
+
 }

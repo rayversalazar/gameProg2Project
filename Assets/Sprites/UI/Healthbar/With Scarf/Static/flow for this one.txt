@@ -1,0 +1,3 @@
+Should be triggered before or after taking damage, gumagalaw lang talaga yung 1 life left to exert pressure.
+
+Yes 8 lang maximum life ng bida, paldo naman kasi sa heal ang dali lang.

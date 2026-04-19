@@ -1,0 +1,3 @@
+mag pplay these sa healthbar as the player takes damage.
+
+Important: If naghahanap you ng static anim nasa static folder mag pplay yun after ni player mag take ng damage which is this folder.
