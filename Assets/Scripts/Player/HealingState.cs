@@ -30,12 +30,6 @@ public class HealingState : BaseState
     }
     public override void ProcessAbility(PlayerStateMachine state)
     {
-        if (baseInputControls.healInput==0)
-        { 
-            state.ChangeState(state.idle);
-            baseHealthUI.HealingHealthBar(false);
-            baseHealthUI.refreshUI(player.currentHP);
-        }
         
         if (healFinished)
         {
