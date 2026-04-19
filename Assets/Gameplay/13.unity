@@ -1698,6 +1698,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6865892902922742761, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7311977512690549351, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26471,6 +26479,10 @@ PrefabInstance:
       value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 858673586371866242, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 2112477189}
+    - target: {fileID: 858673586371866242, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 0}
@@ -26565,6 +26577,10 @@ PrefabInstance:
     - target: {fileID: 5413856254632592831, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ResumeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5704520525621268536, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6348598515972995163, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -26861,15 +26877,15 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2112477188}
   - {fileID: 1372754644}
-  - {fileID: 1214449467}
-  - {fileID: 927073447}
   - {fileID: 1499907645}
   - {fileID: 627424046}
+  - {fileID: 1214449467}
+  - {fileID: 927073447}
   - {fileID: 2004132865}
   - {fileID: 57391185}
   - {fileID: 1424589962}
-  - {fileID: 2112477188}
   - {fileID: 1327256155}
   - {fileID: 1134273570}
   - {fileID: 669535373}
