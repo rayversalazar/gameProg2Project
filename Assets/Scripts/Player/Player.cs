@@ -54,6 +54,8 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint, IRespawn
     public void Respawn()
     {
         Debug.Log("umabot dito bai");
+        currentHP--;
+        healthUI.UpdateHealthBar(currentHP, setHP);
         stateMachine.ChangeState(stateMachine.wakeUp);
     }
 

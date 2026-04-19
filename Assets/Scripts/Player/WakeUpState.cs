@@ -38,9 +38,12 @@ public class WakeUpState : BaseState
     public IEnumerator WakingUp()
     {
         player.fadescreen.blackout();
+        basePhysics.rigidbody.linearVelocity = Vector2.zero;
         transform.position = player.currentSpawnPoint;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         player.fadescreen.Fade(0);
         baseAnimator.SetBool(WakeUpAnimParameter, true);
+        
+        
     }
 }

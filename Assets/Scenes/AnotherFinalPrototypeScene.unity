@@ -9194,6 +9194,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4461072509591544979, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: debug.m_Id
+      value: 2c643d91-8d41-4847-9882-ac753564d267
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461072509591544979, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: player.m_Id
+      value: 57977fd3-1f15-47e4-b6bb-b4dd0e7dd838
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461072509591544979, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: debug.m_Name
+      value: Debug
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461072509591544979, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: pause.m_Name
+      value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461072509591544979, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: player.m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461072509591544979, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: wakeUp.m_Name
+      value: Wake Up
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

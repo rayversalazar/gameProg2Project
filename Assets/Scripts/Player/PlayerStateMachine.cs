@@ -36,4 +36,13 @@ public class PlayerStateMachine : MonoBehaviour
         currentState = newState;
         currentState.OnEnter(this);
     }
+    public void ForceExit(BaseState newState)
+    {
+        currentState.OnExit(this);
+    }
+    public void ForceChange(BaseState newState)
+    {
+        currentState = newState;
+        currentState.OnEnter(this);
+    }
 }

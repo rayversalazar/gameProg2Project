@@ -39,6 +39,11 @@ public class IdleState : BaseState
         {
             state.ChangeState(state.healing);
         }
+        //to wake up
+        if (baseInputControls.wakeUp.triggered)
+        {
+            state.ChangeState(state.wakeUp);
+        }
     }
     public override void OnEnter(PlayerStateMachine state)
     {
@@ -52,7 +57,6 @@ public class IdleState : BaseState
     }
     public override void OnExit(PlayerStateMachine state)
     {
-        base.OnExit(state);
         baseAnimator.SetBool(idleParameterID, false);
     }
 }

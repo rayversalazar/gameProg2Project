@@ -1,11 +1,6 @@
 using UnityEngine;
 
-public class Spike : MonoBehaviour, IDamageDealer
-{
-    [SerializeField] private int spikeDamage;
-
-    public int Damage => spikeDamage;
-
+public class Spike : MonoBehaviour { 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
