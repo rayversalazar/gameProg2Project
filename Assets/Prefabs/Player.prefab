@@ -508,6 +508,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfaebea30cac3334285bf3738f2a1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputControls
+  debug:
+    m_Name: Debug
+    m_Id: 2c643d91-8d41-4847-9882-ac753564d267
+    m_Asset: {fileID: 0}
+    m_Actions: []
+    m_Bindings: []
+  player:
+    m_Name: Player
+    m_Id: 57977fd3-1f15-47e4-b6bb-b4dd0e7dd838
+    m_Asset: {fileID: 0}
+    m_Actions: []
+    m_Bindings: []
   movement:
     m_Name: Movement
     m_Type: 0
@@ -544,11 +556,29 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  pause:
+    m_Name: Pause
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c62fd90d-ccfe-4028-8fdb-844790be5af2
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   heal:
     m_Name: Heal
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: 9d9f7c4d-7b6b-4f78-a34a-3ae051cf19ba
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  wakeUp:
+    m_Name: Wake Up
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 93243cbf-a5e3-4a3c-9a31-602b77416acd
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
