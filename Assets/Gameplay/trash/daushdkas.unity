@@ -124,6 +124,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2695526803906428374, guid: ddbdf494d51278a4dbd06af0a49794cb, type: 3}
   m_PrefabInstance: {fileID: 1379453465}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &61828618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5260102851583978733, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+  m_PrefabInstance: {fileID: 1396099225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &202145397
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,11 +863,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5827191469446072425, guid: 6bf11980713bacf4db2a022d5c6a7ba9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.04
+      value: 64.48
       objectReference: {fileID: 0}
     - target: {fileID: 5827191469446072425, guid: 6bf11980713bacf4db2a022d5c6a7ba9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.79
+      value: 13.91
       objectReference: {fileID: 0}
     - target: {fileID: 5827191469446072425, guid: 6bf11980713bacf4db2a022d5c6a7ba9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1090,7 +1095,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 7.175
+  orthographic size: 6.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1698,6 +1703,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 299885888602303654, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1562663619921433522, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1746,9 +1755,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4461072509591544979, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: pause.m_Name
+      value: Pause
+      objectReference: {fileID: 0}
     - target: {fileID: 4770235375463660678, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
       propertyPath: jumpForce
       value: 7.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260102851583978733, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2601658344566259441, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
@@ -19220,6 +19237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 560162379112376356, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2405981301164096293, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -19300,6 +19321,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4777471428137310200, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5413856254632592831, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -19369,6 +19394,10 @@ PrefabInstance:
       propertyPath: container
       value: 
       objectReference: {fileID: 1968476478}
+    - target: {fileID: 8993284249124668414, guid: ba59640c9abe77b46870d3770fee0436, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 61828618}
     - target: {fileID: 8993284249124668414, guid: ba59640c9abe77b46870d3770fee0436, type: 3}
       propertyPath: playerInput
       value: 
