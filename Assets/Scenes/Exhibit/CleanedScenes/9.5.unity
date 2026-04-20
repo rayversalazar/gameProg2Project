@@ -1454,6 +1454,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1530819960213023137, guid: d1a15b56ded4ed14eb066d6f63e059b3, type: 3}
+      propertyPath: m_Name
+      value: chase
+      objectReference: {fileID: 0}
     - target: {fileID: 3071105692236500477, guid: d1a15b56ded4ed14eb066d6f63e059b3, type: 3}
       propertyPath: m_Name
       value: Mini Boss
@@ -2692,7 +2696,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9.5
+  orthographic size: 0
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
