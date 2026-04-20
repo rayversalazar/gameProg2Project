@@ -4,7 +4,52 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/6.unity
+    guid: 3fcf0118e539ada47a0949c2b2202a79
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/6.1.unity
+    guid: fa822b9e2e807e14384db23791ccdddf
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/6.2.unity
+    guid: ab19d3baf48c1824584f14eb71dc52ef
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/6.3.unity
+    guid: ff48a0b539c9afb4885251cd34a4af94
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/7.unity
+    guid: 89a797c3843b0d14da3358ce071d49b5
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/7.1.unity
+    guid: 9aec9d594b8290f4fa703916e01e0287
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/7.2.unity
+    guid: 6847c485860a0e7459d6aa8338ae3373
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/7.3.unity
+    guid: 9394e5529e326b94286f896be0de9ec7
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/9.unity
+    guid: ccd9f5590f61c174e815e0a716007244
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/9.1.unity
+    guid: 441d174cc9b212347a81e658878e8595
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/9.3.unity
+    guid: 2b3fd2db678db0a4fa34f9785724302c
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/9.5.unity
+    guid: 350248b286775df44a0ec754643539d4
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/13.unity
+    guid: 413ea2f101f956443b961e976096b171
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/14.unity
+    guid: 5e1de68e3cc0fc84580e5aed78adfdad
+  - enabled: 1
+    path: Assets/Scenes/Exhibit/CleanedScenes/15.unity
+    guid: 21d91906be5c589418742a83174675c0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: bfacecfca479d874494db04dfd5f67b4, type: 2}
   m_UseUCBPForAssetBundles: 0
