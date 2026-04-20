@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: 22.01269, y: 26.7961, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6635822622452490444}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6791157988223603970
@@ -46,8 +47,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c8a676be6e2834fbd7ca86d7060d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spike
-  spikeDamage: 1
-  thisPlayer: {fileID: 0}
 --- !u!212 &4464554817638021148
 SpriteRenderer:
   serializedVersion: 2
@@ -202,3 +201,100 @@ PolygonCollider2D:
       - {x: -2.5731418, y: -0.6947326}
       - {x: 2.529797, y: -0.6947326}
   m_UseDelaunayMesh: 1
+--- !u!1 &7132883338767613940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6635822622452490444}
+  - component: {fileID: 5837700755354934307}
+  m_Layer: 0
+  m_Name: Sprite Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6635822622452490444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7132883338767613940}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.425, y: -0.139, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4894980223498323133}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5837700755354934307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7132883338767613940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.Light2D
+  m_ComponentVersion: 2
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.673
+  m_Color: {r: 0.6792453, g: 0.14952633, b: 0.016019935, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: bb0a9529c772bdfbf59c510e75502a6591f5d045c1ec6f87f1573f949b6a7e71a7494ef865a35b911db39f94bf9e4e90
+  m_LightCookieSprite: {fileID: 21300000, guid: 119f93d0bcbf1e743bf5fcf237507d39, type: 3}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.681
+  m_ShadowSoftness: 0.241
+  m_ShadowSoftnessFalloffIntensity: 0.604
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0.41129994, y: 0.057850003, z: 0}
+    m_Extent: {x: 2.6956, y: 0.86285, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.4
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -1.8850918, y: -0.4040146, z: 0}
+  - {x: 2.7069721, y: -0.38222885, z: 0}
+  - {x: 2.3776665, y: 0.1833229, z: 0}
+  - {x: 2.0933018, y: -0.11364937, z: 0}
+  - {x: 1.8906631, y: 0.031589508, z: 0}
+  - {x: 1.5782185, y: -0.10302162, z: 0}
+  - {x: 1.3289909, y: 0.52160645, z: 0}
+  - {x: 1.0403099, y: -0.24998665, z: 0}
+  - {x: 0.87864494, y: -0.029287338, z: 0}
+  - {x: 0.29592133, y: -0.39724922, z: 0}
+  - {x: -0.1852169, y: 0.04442787, z: 0}
+  - {x: -0.53552246, y: -0.33955956, z: 0}
+  - {x: -0.53881454, y: 0.27302933, z: 0}
+  - {x: -0.94742775, y: -0.17259026, z: 0}
+  - {x: -1.0970478, y: 0.08069801, z: 0}
+  - {x: -1.2891617, y: -0.036790848, z: 0}
+  - {x: -1.4605789, y: 0.39687538, z: 0}
