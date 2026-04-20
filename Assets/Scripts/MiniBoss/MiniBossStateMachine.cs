@@ -10,16 +10,32 @@ public class MiniBossStateMachine : MonoBehaviour
     public MiniBossLungeState lunge;
     public MiniBossRestState rest;
     public MiniBossDeathState death;
+    public bool isActive = false;
+    public bool isAlive = true;
+    public BossRoomController roomController;
+    public float maxHP = 100f;
+    public float currentHP;
+
+    public void SetRoomController(BossRoomController controller)
+    {
+        roomController = controller;
+    }
+    public void ActivateBoss()
+    {
+        isActive = true;
+    }
     private void Start()
     {
         //default state
         currentState = idle;
         currentState.OnEnter(this);
+        currentHP = maxHP;
     }
     private void Update()
     {
         currentState.ProcessAbility(this);
     }
+
     private void FixedUpdate()
     {
         currentState.FixedProcessAbility(this);
@@ -30,5 +46,6 @@ public class MiniBossStateMachine : MonoBehaviour
         currentState.OnExit(this);
         currentState = newState;
         currentState.OnEnter(this);
-    }
+    } 
+
 }

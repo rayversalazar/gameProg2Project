@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using static UnityEditorInternal.ReorderableList;
 
 public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint, IRespawn
@@ -43,7 +44,8 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint, IRespawn
         {
             hurtbox.layer = LayerMask.NameToLayer("Player Immunity");
             isHit = !isHit; // switch
-        } else if (stateCooldown.currentPostHitImmunityCooldown <= 0 && isHit)
+        }
+        else if (stateCooldown.currentPostHitImmunityCooldown <= 0 && isHit)
         {
             isHit = !isHit;
             hurtbox.layer = LayerMask.NameToLayer("Player Hurt Box");
@@ -65,23 +67,26 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint, IRespawn
         {
             transform.Rotate(0, 180, 0);
             facingRight = !facingRight;// this is like a switch
-        } else if (playerInputControls.horizontalInput > 0 && facingRight)
+        }
+        else if (playerInputControls.horizontalInput > 0 && facingRight)
         {
             transform.Rotate(0, 180, 0);
             facingRight = !facingRight;
         }
     }
-    public void ForceFlipCharacter(){
+    public void ForceFlipCharacter()
+    {
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
     }
     public void TakeDamage(int damage, Vector3 enemy)
     {
         currentHP -= damage;
-        currentHP =  Mathf.Clamp(currentHP, 0, setHP);
+        currentHP = Mathf.Clamp(currentHP, 0, setHP);
         if (currentHP == 0)
         {
             Debug.Log("yatap");
+            Die();  
             return;
         }
         healthUI.UpdateHealthBar(currentHP, setHP);
@@ -103,6 +108,21 @@ public class Player : MonoBehaviour, IDamageable, ISetSpawnPoint, IRespawn
         currentHP += amount;
         currentHP = Mathf.Clamp(currentHP, 0, setHP);
         healthUI.UpdateHealthBar(currentHP, setHP);
+    }
+
+    private void Die()
+
+    {
+        Debug.Log("patay");
+        Debug.Log("healthUI: " + healthUI);
+        Debug.Log("UIManager: " + UIManager.Instance);
+        healthUI.gameObject.SetActive(false);
+        GetComponent<PlayerInput>().enabled = false;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = Vector2.zero;
+        rb.simulated = false;
+        Time.timeScale = 1f;
+        UIManager.Instance.ShowDeathUI();
     }
 
 

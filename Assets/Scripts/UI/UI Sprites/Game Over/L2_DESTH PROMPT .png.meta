@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: f4973c0c0638ca24997f233b447dcbcc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5665596816211155309
+    second: L2_DESTH PROMPT _0
+  - first:
+      213: 193562724453976255
+    second: L2_DESTH PROMPT _1
+  - first:
+      213: 7314573875612870476
+    second: L2_DESTH PROMPT _2
+  - first:
+      213: -5269913885038253052
+    second: L2_DESTH PROMPT _3
+  - first:
+      213: 4001250923210201734
+    second: L2_DESTH PROMPT _4
+  - first:
+      213: 771214297221290599
+    second: L2_DESTH PROMPT _5
+  - first:
+      213: 6015093200364571089
+    second: L2_DESTH PROMPT _6
+  - first:
+      213: 6276562883156201163
+    second: L2_DESTH PROMPT _7
+  - first:
+      213: 1324433736464131081
+    second: L2_DESTH PROMPT _8
+  - first:
+      213: -1702799660168532613
+    second: L2_DESTH PROMPT _9
+  - first:
+      213: 534762299351207449
+    second: L2_DESTH PROMPT _10
+  - first:
+      213: -2085665706007322404
+    second: L2_DESTH PROMPT _11
+  - first:
+      213: 8482995705260090903
+    second: L2_DESTH PROMPT _12
+  - first:
+      213: -1351550043727694037
+    second: L2_DESTH PROMPT _13
+  - first:
+      213: -9063081548805507035
+    second: L2_DESTH PROMPT _14
+  - first:
+      213: -3624910851050941625
+    second: L2_DESTH PROMPT _15
+  - first:
+      213: -607056883768532058
+    second: L2_DESTH PROMPT _16
+  - first:
+      213: 3992825629536129456
+    second: L2_DESTH PROMPT _17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L2_DESTH PROMPT _18
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 778
+        width: 1209
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3f648a88102744aa9517968c0e23bd
+      internalID: -878118449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f07cc7ca152477340b498b7c631feb39
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      L2_DESTH PROMPT _0: 5665596816211155309
+      L2_DESTH PROMPT _1: 193562724453976255
+      L2_DESTH PROMPT _10: 534762299351207449
+      L2_DESTH PROMPT _11: -2085665706007322404
+      L2_DESTH PROMPT _12: 8482995705260090903
+      L2_DESTH PROMPT _13: -1351550043727694037
+      L2_DESTH PROMPT _14: -9063081548805507035
+      L2_DESTH PROMPT _15: -3624910851050941625
+      L2_DESTH PROMPT _16: -607056883768532058
+      L2_DESTH PROMPT _17: 3992825629536129456
+      L2_DESTH PROMPT _18: -878118449
+      L2_DESTH PROMPT _2: 7314573875612870476
+      L2_DESTH PROMPT _3: -5269913885038253052
+      L2_DESTH PROMPT _4: 4001250923210201734
+      L2_DESTH PROMPT _5: 771214297221290599
+      L2_DESTH PROMPT _6: 6015093200364571089
+      L2_DESTH PROMPT _7: 6276562883156201163
+      L2_DESTH PROMPT _8: 1324433736464131081
+      L2_DESTH PROMPT _9: -1702799660168532613
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

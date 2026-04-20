@@ -14,7 +14,7 @@ public class SceneFader : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // 🔥 important
+            DontDestroyOnLoad(gameObject);
         }
         else
         {

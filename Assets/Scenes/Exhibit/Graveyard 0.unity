@@ -24545,7 +24545,8 @@ PrefabInstance:
       value: Heal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9046879260909541167, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e05197917b70ab47ac02ea1f4c911f7, type: 3}
