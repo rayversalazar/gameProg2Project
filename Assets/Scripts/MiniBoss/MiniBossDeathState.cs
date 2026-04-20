@@ -26,6 +26,7 @@ public class MiniBossDeathState : MiniBossBaseState
         baseSpriteRenderer.color = currentColor;
         if (currentColor.a <= 0)
         {
+            state.roomController?.OnBossDeath();
             Destroy(gameObject);
         }
     }
