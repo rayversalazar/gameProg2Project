@@ -6,6 +6,7 @@ public class WalkState : BaseState
     private string walkParameterName = "Walk";
     private int walkParameterID;
 
+
     public override void FixedProcessAbility(PlayerStateMachine state)
     {
         Walk();
