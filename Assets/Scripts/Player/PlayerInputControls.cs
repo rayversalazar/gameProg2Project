@@ -28,10 +28,6 @@ public class PlayerInputControls : MonoBehaviour
         inputs = new PlayerControls();
         debug = inputs.Debug;
         player = inputs.Player;
-    }
-    void Start()
-    {
-        
         movement = inputs.Player.Movement;
         attack = inputs.Player.Attack;
         jump = inputs.Player.Jump;
@@ -39,6 +35,9 @@ public class PlayerInputControls : MonoBehaviour
         pause = inputs.Player.PauseGame;
         heal = inputs.Player.Heal;
         wakeUp = inputs.Debug.WakeUp;
+    }
+    void Start()
+    {
     }
     private void OnEnable()
     {
