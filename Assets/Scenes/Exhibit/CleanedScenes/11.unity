@@ -708,6 +708,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7684484754483057847, guid: a0785af5025c82243aceb4bfcc46efc1, type: 3}
   m_PrefabInstance: {fileID: 380326427}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &309686844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309686846}
+  - component: {fileID: 309686845}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &309686845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309686844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5deffbf1c5c80fc4392cbea4b431f0ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  deathUI: {fileID: 775648432}
+--- !u!4 &309686846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309686844}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 969.99316, y: 539.9995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &310592469
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +917,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 6.5
+  orthographic size: 8.375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1697,6 +1742,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3310146366383753284, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
   m_PrefabInstance: {fileID: 775648430}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &775648432 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5721346759679240908, guid: d1e5f73c73258c043a401c66e9aa1141, type: 3}
+  m_PrefabInstance: {fileID: 775648430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c414c99ad70076b4884a6765bc9d007b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathUI
 --- !u!1001 &823003646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84774,4 +84830,5 @@ SceneRoots:
   - {fileID: 835325975}
   - {fileID: 1664468030}
   - {fileID: 775648430}
+  - {fileID: 309686846}
   - {fileID: 2768586}
