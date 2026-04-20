@@ -2796,7 +2796,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.45
+  orthographic size: 6.275
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2821,7 +2821,7 @@ Transform:
   m_GameObject: {fileID: 871661985}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.086723, y: -2.8200006, z: -10}
+  m_LocalPosition: {x: 54.135235, y: -2.8200006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44860,20 +44860,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 2010571179}
     m_ColliderPaths:
-    - - X: 974492032
+    - - X: 1004381120
         Y: 23803254
-      - X: 137884832
+      - X: 98032688
         Y: 23803254
-      - X: 137884832
+      - X: 98032688
         Y: -322635264
-      - X: 974492032
+      - X: 1004381120
         Y: -322635264
   m_CompositePaths:
     m_Paths:
-    - - {x: 97.44917, y: -32.263527}
-      - {x: 97.44917, y: 2.3803253}
-      - {x: 13.788484, y: 2.380296}
-      - {x: 13.788512, y: -32.263527}
+    - - {x: 100.43808, y: -32.263527}
+      - {x: 100.43808, y: 2.3803253}
+      - {x: 9.803269, y: 2.380296}
+      - {x: 9.803299, y: -32.263527}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -44985,7 +44985,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 1
   m_CompositeOrder: 0
-  m_Offset: {x: 55.618843, y: -14.941601}
+  m_Offset: {x: 55.12069, y: -14.941601}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -44995,7 +44995,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 83.66072, y: 34.643852}
+  m_Size: {x: 90.63484, y: 34.643852}
   m_EdgeRadius: 0
 --- !u!4 &2010571180
 Transform:
