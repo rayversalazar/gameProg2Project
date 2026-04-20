@@ -600,10 +600,10 @@ TextureImporter:
       name: copy_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 735
-        width: 1258
-        height: 224
+        x: 1165
+        y: 46
+        width: 671
+        height: 288
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
